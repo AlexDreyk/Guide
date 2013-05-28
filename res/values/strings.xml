@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">MBQs CPU Guide</string>
+    <string name="action_settings">Settings</string>
+    <string name="about">About</string>
+    <string name="cpu_governors">CPU Governors</string>
+    <string name="i_o_schedulers">I/O Schedulers</string>
+    <string name="tcp_algorithms">TCP Algorithms</string>
+    <string name="help_layout">Help layout</string>
+    <string name="version">Version</string>
+    <string name="changelog">Changelog</string>
+    <string name="build_date">Build date</string>
+    <string name="theme">Theme</string>
+    <string-array name="list">
+        <item>About this app</item>
+        <item>Content</item>
+        <item>CPU Governors</item>
+        <item>IO Schedulers</item>
+        <item>TCP Congestion</item>
+        <item>TricksterMOD Terms</item>
+    </string-array>
+        <string name="q_a">Q&amp;A</string>
+
+</resources>
