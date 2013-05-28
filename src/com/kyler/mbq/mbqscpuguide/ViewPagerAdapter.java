@@ -6,7 +6,6 @@ import android.support.v4.app.FragmentPagerAdapter;
 
 public class ViewPagerAdapter extends FragmentPagerAdapter {
 
-	// Declare the number of ViewPager pages
 	final int PAGE_COUNT = 5;
 
 	public ViewPagerAdapter(FragmentManager fm) {
