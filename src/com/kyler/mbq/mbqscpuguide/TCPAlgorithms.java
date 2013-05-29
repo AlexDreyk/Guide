@@ -22,7 +22,7 @@ public class TCPAlgorithms extends SherlockFragment {
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
 			Bundle savedInstanceState) {
-		// Get the view from fragmenttab1.xml
+		// TCP listview
 		View view = inflater.inflate(R.layout.tcpalgorithmlayout, container, false);
 		return view;
 	}

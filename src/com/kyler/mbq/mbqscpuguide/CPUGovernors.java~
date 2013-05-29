@@ -22,7 +22,7 @@ public class CPUGovernors extends SherlockFragment {
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
 			Bundle savedInstanceState) {
-		// CPU Governor view
+		// Get the view from fragmenttab1.xml
 		View view = inflater.inflate(R.layout.cpugovernorlayout, container, false);
 		return view;
 	}

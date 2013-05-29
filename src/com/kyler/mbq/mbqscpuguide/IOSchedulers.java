@@ -22,7 +22,7 @@ public class IOSchedulers extends SherlockFragment {
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
 			Bundle savedInstanceState) {
-		// Get the view from fragmenttab1.xml
+		// iosched layout
 		View view = inflater.inflate(R.layout.ioschedulerlayout, container, false);
 		return view;
 	}

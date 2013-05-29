@@ -62,12 +62,12 @@ public class MainActivity extends SherlockFragmentActivity {
 
 			@Override
 			public void onTabUnselected(Tab tab, FragmentTransaction ft) {
-				// TODO 
+				// TODO Auto-generated method stub
 			}
 
 			@Override
 			public void onTabReselected(Tab tab, FragmentTransaction ft) {
-				// TODO, Ill find a use
+				// TODO Auto-generated method stub
 			}
 		};
 		

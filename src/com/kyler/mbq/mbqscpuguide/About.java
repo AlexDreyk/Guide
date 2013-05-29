@@ -29,7 +29,7 @@ public class About extends SherlockFragment {
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
 			Bundle savedInstanceState) {
-		// Get the view from fragmenttab1.xml
+		// About layout
 		View view = inflater.inflate(R.layout.aboutlayout, container, false);
 		return view;
 	

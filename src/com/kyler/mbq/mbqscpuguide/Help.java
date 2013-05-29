@@ -22,7 +22,7 @@ public class Help extends SherlockFragment {
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
 			Bundle savedInstanceState) {
-		// Get the view from fragmenttab1.xml
+		// Help listview
 		View view = inflater.inflate(R.layout.helplayout, container, false);
 		return view;
 	}
