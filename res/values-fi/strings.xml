@@ -4,17 +4,17 @@
     <string name="app_name">MBQn CPU Opas</string>
     <string name="action_settings">Asetukset</string>
     <string name="about">Tietoa</string>
-    <string name="cpu_governors">CPU Kuvernöörit</string>
+    <string name="cpu_governors">CPU Kuvern&ouml;&ouml;rit</string>
     <string name="i_o_schedulers">IO Ajoitusohjelmat</string>
     <string name="tcp_algorithms">TCP Algoritmit</string>
     <string name="help_layout">Apua sommite</string>
     <string name="version">Versio</string>
     <string name="changelog">Muutosloki</string>
-    <string name="build_date">Luontipäivä</string>
+    <string name="build_date">Luontip&auml;iv&auml;</string>
     <string name="theme">Teema</string>
     <string-array name="list">
-        <item>Tietoa tästä sovelluksesta</item>
-        <item>CPU Kuvernöörit</item>
+        <item>Tietoa t&auml;st&auml; sovelluksesta</item>
+        <item>CPU Kuvern&ouml;&ouml;rit</item>
         <item>IO Ajoitusohjelmat</item>
         <item>TCP Ruuhka</item>
         <item>TricksterMOD Ehdot</item>
