@@ -73,7 +73,7 @@ public class MainActivity extends SherlockFragmentActivity {
 		
 
 		
-		tab = mActionBar.newTab().setText("About").setTabListener(tabListener);
+		tab = mActionBar.newTab().setText("About App").setTabListener(tabListener);
 		mActionBar.addTab(tab);
 		
 		
