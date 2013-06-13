@@ -23,7 +23,9 @@ public class MainActivity extends FragmentActivity {
 
     final ListView viewActionsList = (ListView) findViewById(R.id.actions);
 
-    final String[] values = new String[] { "CPU Governors", "IO Schedulers", "TCP Algorithms", "Nephilims Settings", "Help" };
+    final String[] values = new String[] { "CPU Governors", "IO Schedulers", 
+	"TCP Algorithms", "Nephilims Settings", "Help" };
+	
     final ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,
         android.R.layout.simple_list_item_1, android.R.id.text1, values);
 

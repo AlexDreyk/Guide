@@ -14,7 +14,7 @@
         app:actions_layout="@layout/actions"
         app:content_layout="@layout/content"
         app:fade_type="actions"
-        app:spacing="150dp"
+        app:spacing="170dp"
         app:spacing_type="actions_width"
         app:swiping_type="full" />
 
