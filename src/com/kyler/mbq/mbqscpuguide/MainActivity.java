@@ -1,104 +1,76 @@
 package com.kyler.mbq.mbqscpuguide;
 
+import shared.ui.actionscontentview.ActionsContentView;
 import android.os.Bundle;
-import android.support.v4.app.FragmentManager;
-import android.support.v4.app.FragmentTransaction;
-import android.support.v4.view.ViewPager;
+import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentActivity;
+import android.view.Menu;
+import android.view.View;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
+import android.widget.ListView;
 
-import com.actionbarsherlock.app.ActionBar;
-import com.actionbarsherlock.app.ActionBar.Tab;
-import com.actionbarsherlock.app.SherlockFragmentActivity;
-import com.actionbarsherlock.view.Menu;
+public class MainActivity extends FragmentActivity {
+
+  private ActionsContentView viewActionsContentView;
+
+  @Override
+  protected void onCreate(Bundle savedInstanceState) {
+    super.onCreate(savedInstanceState);
+    setContentView(R.layout.activity_main);
+
+    viewActionsContentView = (ActionsContentView) findViewById(R.id.actionsContentView);
+
+    final ListView viewActionsList = (ListView) findViewById(R.id.actions);
+
+    final String[] values = new String[] { "CPU Governors", "IO Schedulers", "TCP Algorithms", "Nephilims Settings", "Help" };
+    final ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,
+        android.R.layout.simple_list_item_1, android.R.id.text1, values);
+
+    viewActionsList.setAdapter(adapter);
+    viewActionsList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+      @Override
+      public void onItemClick(AdapterView<?> adapter, View v, int position,
+          long flags) {
+        showFragment(position);
+      }
+    });
+
+    showFragment(0);
+  }
+
+  @Override
+  public boolean onCreateOptionsMenu(Menu menu) {
+    // Inflate the menu; this adds items to the action bar if it is present.
+    getMenuInflater().inflate(R.menu.main, menu);
+    return true;
+  }
+
+  private void showFragment(int position) {
+    final Fragment f;
+    switch (position) {
+    case 0:
+      f = new CPUGovernors();
+      break;
+    case 1:
+      f = new IOSchedulers();
+      break;
+    case 2:
+      f = new TCPAlgorithms();
+      break;
+    case 3:
+        f = new Help();
+        break;
+    case 4:
+        f = new Neph();
+        break;
 
 
-
-public class MainActivity extends SherlockFragmentActivity {
-
-	ActionBar mActionBar;
-	ViewPager mPager;
-	Tab tab;
-	private Bundle savedInstanceState;
-
-	@Override
-	protected void onCreate(Bundle savedInstanceState) {
-		super.onCreate(savedInstanceState);
-		
-		setContentView(R.layout.activity_main);
-		
-		
-		mActionBar = getSupportActionBar();
-		mActionBar.setNavigationMode(ActionBar.NAVIGATION_MODE_TABS);
-		
-		
-		mPager = (ViewPager) findViewById(R.id.pager);
-		
-		
-		FragmentManager fm = getSupportFragmentManager();
-
-		
-		ViewPager.SimpleOnPageChangeListener ViewPagerListener = new ViewPager.SimpleOnPageChangeListener() {
-			@Override
-			public void onPageSelected(int position) {
-				super.onPageSelected(position);
-				
-				mActionBar.setSelectedNavigationItem(position);
-			}
-		};
-
-		mPager.setOnPageChangeListener(ViewPagerListener);
-		
-		ViewPagerAdapter viewpageradapter = new ViewPagerAdapter(fm);
-		
-		mPager.setAdapter(viewpageradapter);
-		
-		
-		ActionBar.TabListener tabListener = new ActionBar.TabListener() {
-
-			@Override
-			public void onTabSelected(Tab tab, FragmentTransaction ft) {
-				
-				mPager.setCurrentItem(tab.getPosition());
-			}
-
-			@Override
-			public void onTabUnselected(Tab tab, FragmentTransaction ft) {
-				// TODO 
-			}
-
-			@Override
-			public void onTabReselected(Tab tab, FragmentTransaction ft) {
-				// TODO, Ill find a use
-			}
-		};
-		
-
-		
-		tab = mActionBar.newTab().setText("About App").setTabListener(tabListener);
-		mActionBar.addTab(tab);
-		
-		
-		tab = mActionBar.newTab().setText("CPU Governors").setTabListener(tabListener);
-		mActionBar.addTab(tab);
-		
-		
-		tab = mActionBar.newTab().setText("IO Schedulers").setTabListener(tabListener);
-		mActionBar.addTab(tab);
-		
-		
-		tab = mActionBar.newTab().setText("TCP Algorithms").setTabListener(tabListener);
-		mActionBar.addTab(tab);
-		
-		
-		tab = mActionBar.newTab().setText("Help").setTabListener(tabListener);
-		mActionBar.addTab(tab);
-
-	}
-	
-	@Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        getSupportMenuInflater().inflate(R.menu.main, menu);
-		
-        return true;
+    default:
+      return;
     }
-}
+    getSupportFragmentManager().beginTransaction().replace(R.id.content, f).commit();
 
+    viewActionsContentView.showContent();
+  }
+}

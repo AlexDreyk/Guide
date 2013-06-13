@@ -1,12 +1,18 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res/sample.actionscontentview"
     android:layout_width="match_parent"
-    android:layout_height="match_parent" >
+    android:layout_height="match_parent" xmlns:app1="http://schemas.android.com/apk/res/com.example.navigationsample">
 
-    <android.support.v4.view.ViewPager
-        android:id="@+id/pager"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content" >
-    </android.support.v4.view.ViewPager>
+    <shared.ui.actionscontentview.ActionsContentView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/actionsContentView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:actions_layout="@layout/actions"
+        app:content_layout="@layout/content"
+        app:swiping_type="full"
+        app:spacing_type="actions_width"
+        app:spacing="150dp"
+        app:fade_type="actions" />
 
 </RelativeLayout>
