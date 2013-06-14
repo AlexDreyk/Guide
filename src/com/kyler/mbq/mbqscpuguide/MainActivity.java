@@ -23,7 +23,7 @@ public class MainActivity extends FragmentActivity {
 
     final ListView viewActionsList = (ListView) findViewById(R.id.actions);
 
-    final String[] values = new String[] { "CPU Governors", "IO Schedulers", 
+    final String[] values = new String[] { "Welcome", "CPU Governors", "IO Schedulers", 
 	"TCP Algorithms", "Nephilims Settings", "Help" };
 	
     final ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,
@@ -52,19 +52,22 @@ public class MainActivity extends FragmentActivity {
     final Fragment f;
     switch (position) {
     case 0:
+        f = new Welcome();
+        break;
+    case 1:
       f = new CPUGovernors();
       break;
-    case 1:
+    case 2:
       f = new IOSchedulers();
       break;
-    case 2:
+    case 3:
       f = new TCPAlgorithms();
       break;
-    case 3:
-        f = new Help();
-        break;
     case 4:
         f = new Neph();
+        break;
+    case 5:
+        f = new Help();
         break;
 
 

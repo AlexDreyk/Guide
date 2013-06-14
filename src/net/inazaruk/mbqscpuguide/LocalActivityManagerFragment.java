@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.inazaruk.example;
+package net.inazaruk.mbqscpuguide;
 
 import android.app.LocalActivityManager;
 import android.os.Bundle;

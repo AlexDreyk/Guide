@@ -2,4 +2,25 @@
     android:layout_width="fill_parent"
     android:layout_height="fill_parent" >
 
+    <ListView
+        android:id="@+id/helplistview"
+        android:layout_width="match_parent"
+        android:layout_height="390dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:background="@android:color/white"
+        android:layout_below="@+id/helppage" >
+
+    </ListView>
+
+    <TextView
+        android:id="@+id/helppage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="22dp"
+        android:text="@string/help"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
 </RelativeLayout>

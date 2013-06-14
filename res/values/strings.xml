@@ -7,5 +7,11 @@
     <string name="theme">Theme</string>
     <string name="changelog">Changelog</string>
     <string name="version">Version</string>
+    <string name="welcome_to_my_cpu_guide_">Welcome to my CPU Guide!</string>
+    <string name="please_slide_left_to_open_the_menu_">Please slide left to open the menu.</string>
+    <string name="cpu_governors">CPU Governors</string>
+    <string name="i_o_schedulers">I/O Schedulers</string>
+    <string name="tcp_algorithms">TCP Algorithms</string>
+    <string name="help">Help</string>
 
 </resources>

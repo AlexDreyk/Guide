@@ -4,18 +4,33 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:ignore="UnusedNamespace" >
+    tools:ignore="UnusedNamespace" xmlns:app2="http://schemas.android.com/apk/res-auto">
 
-    <shared.ui.actionscontentview.ActionsContentView
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-        android:id="@+id/actionsContentView"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        app:actions_layout="@layout/actions"
-        app:content_layout="@layout/content"
-        app:fade_type="actions"
-        app:spacing="170dp"
-        app:spacing_type="actions_width"
-        app:swiping_type="full" />
+ <shared.ui.actionscontentview.ActionsContentView
+     xmlns:app="http://schemas.android.com/apk/res-auto"
+     android:id="@+id/actionsContentView"
+     android:layout_width="match_parent"
+     android:layout_height="match_parent"
+     android:layout_alignParentLeft="true"
+     android:background="@android:color/white"
+     app:content_layout="@layout/content"
+     app:fade_type="actions"
+     app:shadow_drawable="@drawable/shadow"
+     app:swiping_type="full"
+     app2:actions_layout="@layout/actions"
+     app2:actions_spacing="@dimen/actions_spacing" >
+
+ </shared.ui.actionscontentview.ActionsContentView>
+
+ <ImageButton
+     style="@style/HoloButton.Borderless"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_alignParentRight="true"
+     android:layout_alignParentTop="true"
+     android:background="@color/white"
+     android:contentDescription="@null"
+     android:onClick="onActionsButtonClick"
+     android:src="@drawable/ic_menu_moreoverflow_normal_holo_light" />
 
 </RelativeLayout>
