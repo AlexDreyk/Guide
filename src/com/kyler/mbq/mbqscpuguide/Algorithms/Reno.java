@@ -1,5 +1,7 @@
 package com.kyler.mbq.mbqscpuguide.Algorithms;
 
-public class Reno {
+import android.support.v4.app.Fragment;
+
+public class Reno extends Fragment {
 
 }

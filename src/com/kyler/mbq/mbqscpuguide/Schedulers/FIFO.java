@@ -1,5 +1,7 @@
 package com.kyler.mbq.mbqscpuguide.Schedulers;
 
-public class FIFO {
+import android.support.v4.app.Fragment;
+
+public class FIFO extends Fragment {
 
 }

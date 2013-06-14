@@ -1,5 +1,7 @@
 package com.kyler.mbq.mbqscpuguide.Algorithms;
 
-public class Westwood {
+import android.support.v4.app.Fragment;
+
+public class Westwood extends Fragment {
 
 }

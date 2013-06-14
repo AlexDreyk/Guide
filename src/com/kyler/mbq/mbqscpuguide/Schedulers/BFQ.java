@@ -1,5 +1,7 @@
 package com.kyler.mbq.mbqscpuguide.Schedulers;
 
-public class BFQ {
+import android.support.v4.app.Fragment;
+
+public class BFQ extends Fragment {
 
 }

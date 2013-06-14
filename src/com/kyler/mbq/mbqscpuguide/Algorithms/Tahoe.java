@@ -1,5 +1,7 @@
 package com.kyler.mbq.mbqscpuguide.Algorithms;
 
-public class Tahoe {
+import android.support.v4.app.Fragment;
+
+public class Tahoe extends Fragment {
 
 }

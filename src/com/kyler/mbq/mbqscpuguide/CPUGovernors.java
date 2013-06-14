@@ -82,6 +82,7 @@ public class CPUGovernors extends Fragment {
     private void showFragment(int position) {
       final Fragment l;
       switch (position) {
+      
       case 0:
        l = new OnDemand();
        break;
