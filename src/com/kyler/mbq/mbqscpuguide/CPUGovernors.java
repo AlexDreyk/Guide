@@ -180,7 +180,7 @@ public class CPUGovernors extends Fragment {
       default:
         return;
       }
-      }
+    }
     
     public boolean onCreateOptionsMenu(Menu menu) {
       // Inflate the menu; this adds items to the action bar if it is present.
