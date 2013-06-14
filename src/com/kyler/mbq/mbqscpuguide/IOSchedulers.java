@@ -1,5 +1,14 @@
 package com.kyler.mbq.mbqscpuguide;
 
+import android.os.Bundle;
+import android.support.v4.app.Fragment;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
+import android.widget.ListView;
+
 import com.kyler.mbq.mbqscpuguide.Schedulers.BFQ;
 import com.kyler.mbq.mbqscpuguide.Schedulers.CFQ;
 import com.kyler.mbq.mbqscpuguide.Schedulers.Deadline;
@@ -9,15 +18,6 @@ import com.kyler.mbq.mbqscpuguide.Schedulers.Noop;
 import com.kyler.mbq.mbqscpuguide.Schedulers.ROW;
 import com.kyler.mbq.mbqscpuguide.Schedulers.SIO;
 import com.kyler.mbq.mbqscpuguide.Schedulers.Vr;
-
-import android.os.Bundle;
-import android.support.v4.app.Fragment;
-import android.view.LayoutInflater;
-import android.view.View;
-import android.view.ViewGroup;
-import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
-import android.widget.ListView;
 
 public class IOSchedulers extends Fragment {
 	ListView lv1;
@@ -99,5 +99,4 @@ private void showFragment(int position) {
   default:
     return;
   }
-}
-}
+}}
