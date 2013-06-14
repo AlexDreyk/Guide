@@ -4,27 +4,27 @@
         android:id="@+id/action_settings"
         android:orderInCategory="100"
         android:showAsAction="never"
-        android:title="@string/action_settings">
+        android:title="@string/action_settings" android:visible="true" android:enabled="true">
     </item>
     
     <item 
         android:id="@+id/builddate" 
-        android:title="@string/build_date">     
+        android:title="@string/build_date" android:visible="true" android:enabled="true">     
     </item>
     
     <item 
         android:id="@+id/theme" 
-        android:title="@string/theme">       
+        android:title="@string/theme" android:visible="true" android:enabled="true">       
     </item>
    
     <item 
         android:id="@+id/changelog" 
-        android:title="@string/changelog">
+        android:title="@string/changelog" android:visible="true" android:enabled="true">
     </item>
     
     <item 
         android:id="@+id/version" 
-        android:title="@string/version"> 
+        android:title="@string/version" android:visible="true" android:enabled="true"> 
     </item>
 
 </menu>

@@ -13,6 +13,13 @@ import android.widget.ListView;
 public class MainActivity extends FragmentActivity {
 
   private ActionsContentView viewActionsContentView;
+  
+  @Override
+  public boolean onCreateOptionsMenu(Menu menu) {
+    // Inflate the menu; this adds items to the action bar if it is present.
+    getMenuInflater().inflate(R.menu.main, menu);
+    return true;
+  }
 
   @Override
   protected void onCreate(Bundle savedInstanceState) {
@@ -22,9 +29,9 @@ public class MainActivity extends FragmentActivity {
     viewActionsContentView = (ActionsContentView) findViewById(R.id.actionsContentView);
 
     final ListView viewActionsList = (ListView) findViewById(R.id.actions);
-
+    
     final String[] values = new String[] { "Welcome", "CPU Governors", "IO Schedulers", 
-	"TCP Algorithms", "Nephilims Settings", "Help" };
+	"TCP Algorithms", "Nephilims Settings", "Help", "Settings" };
 	
     final ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,
         android.R.layout.simple_list_item_1, android.R.id.text1, values);
@@ -39,13 +46,6 @@ public class MainActivity extends FragmentActivity {
     });
 
     showFragment(0);
-  }
-
-  @Override
-  public boolean onCreateOptionsMenu(Menu menu) {
-    // Inflate the menu; this adds items to the action bar if it is present.
-    getMenuInflater().inflate(R.menu.main, menu);
-    return true;
   }
 
   private void showFragment(int position) {

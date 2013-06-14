@@ -1,5 +1,7 @@
 package com.kyler.mbq.mbqscpuguide.Governors;
 
-public class OnDemand {
+import android.support.v4.app.Fragment;
+
+public class OnDemand extends Fragment {
 
 }

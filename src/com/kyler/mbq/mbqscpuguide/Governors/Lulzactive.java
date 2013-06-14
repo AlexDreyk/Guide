@@ -1,5 +1,7 @@
 package com.kyler.mbq.mbqscpuguide.Governors;
 
-public class Lulzactive {
+import android.support.v4.app.Fragment;
+
+public class Lulzactive extends Fragment {
 
 }

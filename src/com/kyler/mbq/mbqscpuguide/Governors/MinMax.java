@@ -1,5 +1,7 @@
 package com.kyler.mbq.mbqscpuguide.Governors;
 
-public class MinMax {
+import android.support.v4.app.Fragment;
+
+public class MinMax extends Fragment {
 
 }

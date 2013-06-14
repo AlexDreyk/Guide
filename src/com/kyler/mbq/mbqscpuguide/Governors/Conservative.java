@@ -1,5 +1,7 @@
 package com.kyler.mbq.mbqscpuguide.Governors;
 
-public class Conservative {
+import android.support.v4.app.Fragment;
+
+public class Conservative extends Fragment {
 
 }

@@ -1,5 +1,7 @@
 package com.kyler.mbq.mbqscpuguide.Governors;
 
-public class SmartassV2 {
+import android.support.v4.app.Fragment;
+
+public class SmartassV2 extends Fragment {
 
 }
