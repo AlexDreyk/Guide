@@ -1,6 +1,29 @@
 package com.kyler.mbq.mbqscpuguide;
 
+import com.kyler.mbq.mbqscpuguide.Governors.BrazilianWax;
+import com.kyler.mbq.mbqscpuguide.Governors.Conservative;
+import com.kyler.mbq.mbqscpuguide.Governors.DynInteractive;
+import com.kyler.mbq.mbqscpuguide.Governors.Hotplug;
+import com.kyler.mbq.mbqscpuguide.Governors.HotplugX;
 import com.kyler.mbq.mbqscpuguide.Governors.Interactive;
+import com.kyler.mbq.mbqscpuguide.Governors.InteractiveX;
+import com.kyler.mbq.mbqscpuguide.Governors.Lagfree;
+import com.kyler.mbq.mbqscpuguide.Governors.Lazy;
+import com.kyler.mbq.mbqscpuguide.Governors.Lionheart;
+import com.kyler.mbq.mbqscpuguide.Governors.Lulzactive;
+import com.kyler.mbq.mbqscpuguide.Governors.MinMax;
+import com.kyler.mbq.mbqscpuguide.Governors.Nightmare;
+import com.kyler.mbq.mbqscpuguide.Governors.OnDemand;
+import com.kyler.mbq.mbqscpuguide.Governors.OndemandPlus;
+import com.kyler.mbq.mbqscpuguide.Governors.PegasusQ;
+import com.kyler.mbq.mbqscpuguide.Governors.Performance;
+import com.kyler.mbq.mbqscpuguide.Governors.Powersave;
+import com.kyler.mbq.mbqscpuguide.Governors.Sakuractive;
+import com.kyler.mbq.mbqscpuguide.Governors.Savagedzen;
+import com.kyler.mbq.mbqscpuguide.Governors.Scary;
+import com.kyler.mbq.mbqscpuguide.Governors.Smartass;
+import com.kyler.mbq.mbqscpuguide.Governors.SmartassV2;
+import com.kyler.mbq.mbqscpuguide.Governors.Userspace;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -23,7 +46,7 @@ public class CPUGovernors extends Fragment {
     		"Nightmare", "HotplugX", 
     		"Lulzactive", "Smartass", 
     		"SmartassV2", "Lionheart", 
-    		"BrazillianWax", "Savagedzen", 
+    		"BrazilianWax", "Savagedzen", 
     		"Scary", "Sakuractive",
     		"OndemandPlus", "DynInteractive" };
 
@@ -60,25 +83,100 @@ public class CPUGovernors extends Fragment {
       final Fragment l;
       switch (position) {
       case 0:
+       l = new OnDemand();
+       break;
+       
+      case 1:
        l = new Interactive();
        break;
-      case 1:
-       l = new CPUGovernors();
-       break;
+       
       case 2:
-       l = new IOSchedulers();
+       l = new InteractiveX();
        break;
+       
       case 3:
-       l = new TCPAlgorithms();
+       l = new Performance();
        break;
+       
       case 4:
-       l = new Neph();
+       l = new Powersave();
        break;
       case 5:
-       l = new Help();
+       l = new Conservative();
        break;
-
-
+       
+      case 6:
+       l = new Userspace();
+       break;
+       
+      case 7:
+       l = new Lagfree();
+       break;
+       
+      case 8:
+       l = new MinMax();
+      break;
+      
+      case 9:
+       l = new Hotplug();
+      break;
+      
+      case 10:
+       l = new PegasusQ();
+      break;
+      
+      case 11:
+       l = new Lazy();
+      break;
+      
+      case 12:
+       l = new Nightmare();
+      break;
+      
+      case 13:
+       l = new HotplugX();
+      break;
+      
+      case 14:
+       l = new Lulzactive();
+      break;
+      
+      case 15:
+       l = new Smartass();
+      break;
+      
+      case 16:
+       l = new SmartassV2();
+      break;
+      
+      case 17:
+       l = new Lionheart();
+      break;
+      
+      case 18:
+       l = new BrazilianWax();
+      break;
+      
+      case 19:
+       l = new Savagedzen();
+      break;
+      
+      case 20:
+       l = new Scary();
+      break;
+     
+      case 21:
+       l = new Sakuractive();
+      break;
+     
+      case 22:
+       l = new OndemandPlus();
+      break;
+     
+      case 23:
+       l = new DynInteractive();
+      break;
+         
       default:
         return;
       }
