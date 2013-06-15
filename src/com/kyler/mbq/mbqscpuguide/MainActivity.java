@@ -504,7 +504,7 @@ public class MainActivity extends FragmentActivity {
         	 
    AlertDialog.Builder changelogalert = new AlertDialog.Builder(this);
 
-          changelogalert.setMessage("Initial release.");
+          changelogalert.setMessage("");
 
           changelogalert.setNeutralButton("OK", new DialogInterface.OnClickListener() {
 
@@ -521,7 +521,7 @@ public class MainActivity extends FragmentActivity {
         	 
    AlertDialog.Builder versionalert = new AlertDialog.Builder(this);
 
-          versionalert.setMessage("Alpha 2 (0.0.2a)");
+          versionalert.setMessage("Alpha 3 (0.0.3a)");
 
           versionalert.setNeutralButton("OK", new DialogInterface.OnClickListener() {
 
