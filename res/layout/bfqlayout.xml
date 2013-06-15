@@ -2,4 +2,12 @@
     android:layout_width="fill_parent"
     android:layout_height="fill_parent" >
 
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:text="Gives each request a time budget. If the request is not met by the time it is given, the request is skipped. Smarter than the CFQ governor." />
+
 </RelativeLayout>

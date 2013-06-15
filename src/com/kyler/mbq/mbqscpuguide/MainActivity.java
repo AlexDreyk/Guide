@@ -41,10 +41,15 @@ import com.kyler.mbq.mbqscpuguide.Schedulers.SIO;
 import com.kyler.mbq.mbqscpuguide.Schedulers.Vr;
 
 import shared.ui.actionscontentview.ActionsContentView;
+import android.app.AlertDialog;
+import android.content.DialogInterface;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
 import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
@@ -367,11 +372,63 @@ public class MainActivity extends FragmentActivity {
 
     viewActionsContentView.showContent();
   }
-  
   @Override
   public boolean onCreateOptionsMenu(Menu menu) {
-    // Inflate the menu; this adds items to the action bar if it is present.
-    getMenuInflater().inflate(R.menu.main, menu);
-    return true;
+      MenuInflater inflater = getMenuInflater();
+      inflater.inflate(R.menu.main, menu);
+	return true;
+  }
+  @Override
+  public boolean onOptionsItemSelected(MenuItem item) {
+     switch (item.getItemId()) {
+     
+         case R.id.builddate:
+              AlertDialog.Builder builddatealert = new AlertDialog.Builder(this);
+
+                     builddatealert.setMessage("Saturday, June 15th, 2013");
+
+                     builddatealert.setNeutralButton("OK", new DialogInterface.OnClickListener() {
+
+                         public void onClick(DialogInterface arg0, int arg1) {
+
+                         }
+                     });
+
+                     builddatealert.show();
+              break;
+         case R.id.changelog:
+   AlertDialog.Builder changelogalert = new AlertDialog.Builder(this);
+
+          changelogalert.setMessage("-Initial release.");
+
+          changelogalert.setNeutralButton("OK", new DialogInterface.OnClickListener() {
+
+              public void onClick(DialogInterface arg0, int arg1) {
+
+              }
+          });
+
+          changelogalert.show();
+          break;
+          
+         case R.id.version:
+   AlertDialog.Builder versionalert = new AlertDialog.Builder(this);
+
+          versionalert.setMessage("Alpha 1");
+
+          versionalert.setNeutralButton("OK", new DialogInterface.OnClickListener() {
+
+              public void onClick(DialogInterface arg0, int arg1) {
+
+              }
+          });
+
+          versionalert.show();
+          break;
+          
+
+     }
+     return true;
   }
 }
+
