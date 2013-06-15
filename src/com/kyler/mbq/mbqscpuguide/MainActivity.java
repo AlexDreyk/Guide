@@ -1,18 +1,6 @@
 package com.kyler.mbq.mbqscpuguide;
 
 import shared.ui.actionscontentview.ActionsContentView;
-import Tips.AutoBrightnessSucks;
-import Tips.BetterBatteryLife;
-import Tips.BlockAds;
-import Tips.ChangeBootAnimation;
-import Tips.ChangeDensity;
-import Tips.DeveloperOptions;
-import Tips.ForceGPURendering;
-import Tips.MSAA;
-import Tips.StatusBarAndQS;
-import Tips.WiFiDuringSleep;
-import Tips.WiFiScanInterval;
-import Tips.zRAM;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.os.Bundle;
@@ -65,6 +53,18 @@ import com.kyler.mbq.mbqscpuguide.Schedulers.Noop;
 import com.kyler.mbq.mbqscpuguide.Schedulers.ROW;
 import com.kyler.mbq.mbqscpuguide.Schedulers.SIO;
 import com.kyler.mbq.mbqscpuguide.Schedulers.Vr;
+import com.kyler.mbq.mbqscpuguide.Tips.AutoBrightnessSucks;
+import com.kyler.mbq.mbqscpuguide.Tips.BetterBatteryLife;
+import com.kyler.mbq.mbqscpuguide.Tips.BlockAds;
+import com.kyler.mbq.mbqscpuguide.Tips.ChangeBootAnimation;
+import com.kyler.mbq.mbqscpuguide.Tips.ChangeDensity;
+import com.kyler.mbq.mbqscpuguide.Tips.DeveloperOptions;
+import com.kyler.mbq.mbqscpuguide.Tips.ForceGPURendering;
+import com.kyler.mbq.mbqscpuguide.Tips.MSAA;
+import com.kyler.mbq.mbqscpuguide.Tips.StatusBarAndQS;
+import com.kyler.mbq.mbqscpuguide.Tips.WiFiDuringSleep;
+import com.kyler.mbq.mbqscpuguide.Tips.WiFiScanInterval;
+import com.kyler.mbq.mbqscpuguide.Tips.zRAM;
 
 public class MainActivity extends FragmentActivity {
 
