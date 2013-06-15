@@ -431,7 +431,7 @@ public class MainActivity extends FragmentActivity {
         	 
    AlertDialog.Builder versionalert = new AlertDialog.Builder(this);
 
-          versionalert.setMessage("Alpha 1 (0.0.1a)");
+          versionalert.setMessage("Alpha 2 (0.0.2a)");
 
           versionalert.setNeutralButton("OK", new DialogInterface.OnClickListener() {
 
