@@ -1,6 +1,18 @@
 package com.kyler.mbq.mbqscpuguide;
 
 import shared.ui.actionscontentview.ActionsContentView;
+import Tips.AutoBrightnessSucks;
+import Tips.BetterBatteryLife;
+import Tips.BlockAds;
+import Tips.ChangeBootAnimation;
+import Tips.ChangeDensity;
+import Tips.DeveloperOptions;
+import Tips.ForceGPURendering;
+import Tips.MSAA;
+import Tips.StatusBarAndQS;
+import Tips.WiFiDuringSleep;
+import Tips.WiFiScanInterval;
+import Tips.zRAM;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.os.Bundle;
@@ -160,7 +172,33 @@ public class MainActivity extends FragmentActivity {
     		
     		"Cubic", 
     		
-            "Westwood"  };
+            "Westwood",  
+    		
+    		"Android tips",
+    		
+    		"Developer options",
+    		
+    		"Force GPU Rendering",
+    		
+    		"WiFi sleep policy",
+    		
+    		"WiFi Scan Interval", 
+    		
+    		"Better Battery Life",
+    		
+    		"StatusBar Trick",
+    		
+    		"Autobrightness Sucks",
+    		
+    		"Change Screen Density",
+    		
+    		"Change Your Bootanimation",
+    		
+    		"Block Ads",
+    		
+    		"4x MSAA",
+    		
+    		"zRAM Explanation" };
 
 	
     final ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,
@@ -366,7 +404,59 @@ public class MainActivity extends FragmentActivity {
       	
     case 45:
       f = new FIFO();
+      break; 
+      
+    case 46:
+      f = new AndroidTips();
+      break;
+      
+    case 47:
+      f = new DeveloperOptions();
+      break;
+          
+    case 48:
+      f = new ForceGPURendering();
+      break;
+          
+    case 49:
+      f = new WiFiDuringSleep();
+      break;
+      	
+    case 50:
+      f = new WiFiScanInterval();
+      break;
+      	
+    case 51:
+      f = new BetterBatteryLife();
       break;  
+        
+    case 52:
+      f = new StatusBarAndQS();
+      break;
+            
+    case 53:
+      f = new AutoBrightnessSucks();
+      break;
+            
+    case 54:
+      f = new ChangeDensity();
+        break;
+          
+    case 55:
+      f = new ChangeBootAnimation();
+        break;
+            
+    case 56:
+      f = new BlockAds();
+      break;
+        	
+    case 57:
+      f = new MSAA();
+      break;
+        	
+    case 58:
+      f = new zRAM();
+      break; 
 
     default:
     	
