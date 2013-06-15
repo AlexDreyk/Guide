@@ -1,21 +1,24 @@
 package com.kyler.mbq.mbqscpuguide.Governors;
 
+import com.kyler.mbq.mbqscpuguide.R;
+
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.View.OnClickListener;
 
-import com.kyler.mbq.mbqscpuguide.R;
-
-public class OnDemand extends Fragment {
+public class OnDemand extends Fragment implements OnClickListener {
 	
-	public View onCreateView(LayoutInflater inflater, ViewGroup container,
+	@Override
+	  public View onCreateView(LayoutInflater inflater, ViewGroup container,
 	      Bundle savedInstanceState) {
 	    final View v = inflater.inflate(R.layout.ondemandlayout, container, false);
 	    return v;
 	  }
 
+	@Override
 	public void onClick(View v) {
 		// TODO Auto-generated method stub
 		
