@@ -1,0 +1,23 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="Avoids disk paging, compresses your RAM. Disk paging means the way your phone saves temporary data. It helps with fragmentation of your disk and the physical space, which, over time, keeps speed stable and prevents any system slowdowns." />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="54dp"
+        android:text="zRAM Information"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+</RelativeLayout>

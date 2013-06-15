@@ -1,0 +1,23 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="In your build.prop, there is a line of code that looks like this: ro.sf.lcd_density=320, change it to 240 for a tablet-ish feel. Don't go under 160 though, you'll have endless bootloops" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="54dp"
+        android:text="Change DPI"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+</RelativeLayout>
