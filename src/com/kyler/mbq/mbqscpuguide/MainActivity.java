@@ -1,5 +1,45 @@
 package com.kyler.mbq.mbqscpuguide;
 
+import com.kyler.mbq.mbqscpuguide.Algorithms.Cubic;
+import com.kyler.mbq.mbqscpuguide.Algorithms.Hybla;
+import com.kyler.mbq.mbqscpuguide.Algorithms.Reno;
+import com.kyler.mbq.mbqscpuguide.Algorithms.Tahoe;
+import com.kyler.mbq.mbqscpuguide.Algorithms.Vegas;
+import com.kyler.mbq.mbqscpuguide.Algorithms.Westwood;
+import com.kyler.mbq.mbqscpuguide.Governors.BrazilianWax;
+import com.kyler.mbq.mbqscpuguide.Governors.Conservative;
+import com.kyler.mbq.mbqscpuguide.Governors.DynInteractive;
+import com.kyler.mbq.mbqscpuguide.Governors.Hotplug;
+import com.kyler.mbq.mbqscpuguide.Governors.HotplugX;
+import com.kyler.mbq.mbqscpuguide.Governors.Interactive;
+import com.kyler.mbq.mbqscpuguide.Governors.InteractiveX;
+import com.kyler.mbq.mbqscpuguide.Governors.Lagfree;
+import com.kyler.mbq.mbqscpuguide.Governors.Lazy;
+import com.kyler.mbq.mbqscpuguide.Governors.Lionheart;
+import com.kyler.mbq.mbqscpuguide.Governors.Lulzactive;
+import com.kyler.mbq.mbqscpuguide.Governors.MinMax;
+import com.kyler.mbq.mbqscpuguide.Governors.Nightmare;
+import com.kyler.mbq.mbqscpuguide.Governors.OnDemand;
+import com.kyler.mbq.mbqscpuguide.Governors.OndemandPlus;
+import com.kyler.mbq.mbqscpuguide.Governors.PegasusQ;
+import com.kyler.mbq.mbqscpuguide.Governors.Performance;
+import com.kyler.mbq.mbqscpuguide.Governors.Powersave;
+import com.kyler.mbq.mbqscpuguide.Governors.Sakuractive;
+import com.kyler.mbq.mbqscpuguide.Governors.Savagedzen;
+import com.kyler.mbq.mbqscpuguide.Governors.Scary;
+import com.kyler.mbq.mbqscpuguide.Governors.Smartass;
+import com.kyler.mbq.mbqscpuguide.Governors.SmartassV2;
+import com.kyler.mbq.mbqscpuguide.Governors.Userspace;
+import com.kyler.mbq.mbqscpuguide.Schedulers.BFQ;
+import com.kyler.mbq.mbqscpuguide.Schedulers.CFQ;
+import com.kyler.mbq.mbqscpuguide.Schedulers.Deadline;
+import com.kyler.mbq.mbqscpuguide.Schedulers.FIFO;
+import com.kyler.mbq.mbqscpuguide.Schedulers.FIOPS;
+import com.kyler.mbq.mbqscpuguide.Schedulers.Noop;
+import com.kyler.mbq.mbqscpuguide.Schedulers.ROW;
+import com.kyler.mbq.mbqscpuguide.Schedulers.SIO;
+import com.kyler.mbq.mbqscpuguide.Schedulers.Vr;
+
 import shared.ui.actionscontentview.ActionsContentView;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -23,8 +63,100 @@ public class MainActivity extends FragmentActivity {
 
     final ListView viewActionsList = (ListView) findViewById(R.id.actions);
     
-    final String[] values = new String[] { "Welcome", "CPU Governors", "IO Schedulers", 
-	"TCP Algorithms", "Nephilims Settings", "Help", "Settings" };
+    final String[] values = new String[] 
+    		{ 
+    		
+    		"Welcome",
+    		
+    		"CPU Governors", 
+    		
+    		"IO Schedulers",
+    		
+    		"TCP Algorithms", 
+    		
+    		"Nephilims Settings", 
+    		
+    		"Help", 
+    		
+    		"Settings",
+    		
+    		"Ondemand", 
+    		
+    		"Interactive",
+      		
+      		"InteractiveX", 
+      		
+      		"Performance", 
+      		
+      		"Powersave", 
+      		
+      		"Conservative", 
+      		
+      		"Userspace", 
+      		
+      		"Lagfree", 
+      		
+      		"Min Max", 
+      		
+      		"Hotplug", 
+      		
+      		"PegasusQ", 
+      		
+      		"Lazy", 
+      		
+      		"Nightmare", 
+      		
+      		"HotplugX", 
+      		
+      		"Lulzactive", 
+      		
+      		"Smartass", 
+      		
+      		"SmartassV2", 
+      		
+      		"Lionheart", 
+      		
+      		"BrazilianWax", 
+      		
+      		"Savagedzen", 
+      		
+      		"Scary",
+      		
+      		"Sakuractive",
+      		
+      		"OndemandPlus", 
+      		
+      		"DynInteractive",
+      		
+      		"Deadline", 
+      		
+      		"Noop", 
+      		
+    		"SIO", 
+    		
+    		"BFQ", 
+    		
+    		"CFQ", 
+    		
+    		"FIOPS", 
+    		
+    		"ROW", 
+    		
+    		"V(R)", 
+    		
+    		"FIFO", 
+    		
+    		"Tahoe", 
+    		
+    		"Reno", 
+    		
+    		"Vegas", 
+    		
+    		"Hybla", 
+    		
+    		"Cubic", 
+    		
+            "Westwood"  };
 	
     final ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,
         android.R.layout.simple_list_item_1, android.R.id.text1, values);
@@ -47,21 +179,186 @@ public class MainActivity extends FragmentActivity {
     case 0:
       f = new Welcome();
       break;
+      
     case 1:
       f = new CPUGovernors();
       break;
+      
     case 2:
       f = new IOSchedulers();
       break;
+      
     case 3:
       f = new TCPAlgorithms();
       break;
+      
     case 4:
       f = new Neph();
       break;
+      
     case 5:
       f = new Help();
       break;
+      
+    case 6:
+      f = new OnDemand();
+      break;
+        
+    case 7:
+      f = new Interactive();
+      break;
+        
+    case 8:
+      f = new InteractiveX();
+      break;
+        
+    case 9:
+      f = new Performance();
+      break;
+        
+    case 10:
+      f = new Powersave();
+      break;
+      
+    case 11:
+      f = new Conservative();
+      break;
+        
+    case 12:
+      f = new Userspace();
+      break;
+        
+    case 13:
+      f = new Lagfree();
+      break;
+        
+    case 14:
+      f = new MinMax();
+      break;
+       
+    case 15:
+      f = new Hotplug();
+      break;
+       
+    case 16:
+      f = new PegasusQ();
+      break;
+       
+    case 17:
+      f = new Lazy();
+      break;
+       
+    case 18:
+      f = new Nightmare();
+      break;
+       
+    case 19:
+      f = new HotplugX();
+      break;
+       
+    case 20:
+      f = new Lulzactive();
+      break;
+       
+    case 21:
+      f = new Smartass();
+      break;
+       
+    case 22:
+      f = new SmartassV2();
+      break;
+       
+    case 23:
+      f = new Lionheart();
+      break;
+       
+    case 24:
+      f = new BrazilianWax();
+      break;
+       
+    case 25:
+      f = new Savagedzen();
+      break;
+       
+    case 26:
+      f = new Scary();
+      break;
+    
+    case 27:
+      f = new Sakuractive();
+      break;
+      
+    case 28:
+      f = new OndemandPlus();
+      break;
+      
+    case 29:
+      f = new DynInteractive();
+      break;
+      
+    case 30:
+      f = new Deadline();
+      break;
+        
+    case 31:
+      f = new Noop();
+      break;
+        
+    case 32:
+      f = new SIO();
+      break;
+        
+    case 33:
+      f = new BFQ();
+      break;
+        
+    case 34:
+      f = new CFQ();
+      break;
+        
+    case 35:
+      f = new FIOPS();
+      break;
+        
+    case 36:
+      f = new ROW();
+      break;
+    	
+    case 37:
+      f = new Vr();
+      break;
+    	
+    case 38:
+      f = new FIFO();
+      break;  
+      
+    case 39:
+      f = new Tahoe();
+      break;
+          
+    case 40:
+      f = new Reno();
+      break;
+          
+    case 41:
+      f = new Vegas();
+      break;
+        
+    case 42:
+      f = new Hybla();
+      break;
+          
+    case 43:
+      f = new Cubic();
+      break;
+      	
+    case 44:
+      f = new Westwood();
+      break;
+      	
+    case 45:
+      f = new FIFO();
+      break;  
 
 
     default:
