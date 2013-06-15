@@ -8,7 +8,17 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
-        android:text="Small Text"
+        android:text="'Completely Fair Queuing' scheduler. Scales its requests in an effort to insure smooth task handling. Attempts to give each request equal I/O bandwidth. Typically, lag happens with this scheduler due to the effort of competing tasks on the disk because it tries to give equal bandwidth amongst all requests."
         android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="54dp"
+        android:text="CFQ"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
 
 </RelativeLayout>

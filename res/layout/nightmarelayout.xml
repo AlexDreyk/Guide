@@ -8,7 +8,17 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
-        android:text="Small Text"
+        android:text="A modified PegasusQ, less aggressive (Which means not as good performance-wise), and doesn't usually hotplug. It is good for a balance between performance and battery life. May prevent the 'Screen of death' as well, since it doesn't hotplug."
         android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="54dp"
+        android:text="Nightmare"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
 
 </RelativeLayout>

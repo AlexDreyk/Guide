@@ -8,7 +8,17 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
-        android:text="Small Text"
+        android:text="Basically the same as Taho, but.. if 3 of the same packets are received, it will halve the window, instead of reducing it to one MSS. It changes the slow start threshold equal to that of the congestion window."
         android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="54dp"
+        android:text="Reno"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
 
 </RelativeLayout>

@@ -8,7 +8,17 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
-        android:text="Small Text"
+        android:text="Based off of the Smartass and Interactive governor(s), the newer version of this Governor gives more control to the user, and he CPU frequency parameters (Ask for a description if you need one) are smarter. Smart at scaling both up and down."
         android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="54dp"
+        android:text="Lulzactive"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
 
 </RelativeLayout>

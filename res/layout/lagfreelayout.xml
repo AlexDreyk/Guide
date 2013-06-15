@@ -8,7 +8,17 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
-        android:text="Small Text"
+        android:text="More aggressive kernel. It scales the CPU faster, reducing lag and performance, while maintaining decent battery life. Its main goal is to increase performance without reducing battery life."
         android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="54dp"
+        android:text="Lagfree"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
 
 </RelativeLayout>

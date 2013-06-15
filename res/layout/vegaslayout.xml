@@ -8,7 +8,17 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
-        android:text="Small Text"
+        android:text="One of the smoothest (next to cubic), it increases the timeout delay for packets, which allows more to be received, but at a higher rate. It also has set timeouts, which helps with speed because it's constantly being refreshed."
         android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="54dp"
+        android:text="Vegas"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
 
 </RelativeLayout>

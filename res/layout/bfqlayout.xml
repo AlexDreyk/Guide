@@ -2,14 +2,22 @@
     android:layout_width="fill_parent"
     android:layout_height="fill_parent" >
 
-    <Button
-        android:id="@+id/bfqbutton"
-        style="@android:style/Holo.ButtonBar"
+    <TextView
+        android:id="@+id/textView1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
         android:layout_alignParentRight="true"
         android:layout_centerVertical="true"
-        android:text="View definition" />
+        android:text="@string/gives_each_request_a_time_budget_if_the_request_is_not_met_by_the_time_it_is_given_the_request_is_skipped_smarter_than_the_cfq_governor_" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="54dp"
+        android:text="@string/bfq"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
    
 </RelativeLayout>
