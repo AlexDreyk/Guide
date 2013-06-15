@@ -1,5 +1,19 @@
 package com.kyler.mbq.mbqscpuguide;
 
+import shared.ui.actionscontentview.ActionsContentView;
+import android.app.AlertDialog;
+import android.content.DialogInterface;
+import android.os.Bundle;
+import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentActivity;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
+import android.view.View;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
+import android.widget.ListView;
+
 import com.kyler.mbq.mbqscpuguide.Algorithms.Cubic;
 import com.kyler.mbq.mbqscpuguide.Algorithms.Hybla;
 import com.kyler.mbq.mbqscpuguide.Algorithms.Reno;
@@ -40,27 +54,13 @@ import com.kyler.mbq.mbqscpuguide.Schedulers.ROW;
 import com.kyler.mbq.mbqscpuguide.Schedulers.SIO;
 import com.kyler.mbq.mbqscpuguide.Schedulers.Vr;
 
-import shared.ui.actionscontentview.ActionsContentView;
-import android.app.AlertDialog;
-import android.content.DialogInterface;
-import android.content.Intent;
-import android.os.Bundle;
-import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentActivity;
-import android.view.Menu;
-import android.view.MenuInflater;
-import android.view.MenuItem;
-import android.view.View;
-import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
-import android.widget.ListView;
-
 public class MainActivity extends FragmentActivity {
 
   private ActionsContentView viewActionsContentView;
 
   @Override
   protected void onCreate(Bundle savedInstanceState) {
+	  
     super.onCreate(savedInstanceState);
     setContentView(R.layout.activity_main);
 
@@ -69,6 +69,7 @@ public class MainActivity extends FragmentActivity {
     final ListView viewActionsList = (ListView) findViewById(R.id.actions);
     
     final String[] values = new String[] 
+    		
     		{ 
     		
     		"Welcome",
@@ -166,10 +167,13 @@ public class MainActivity extends FragmentActivity {
         android.R.layout.simple_list_item_1, android.R.id.text1, values);
 
     viewActionsList.setAdapter(adapter);
+    
     viewActionsList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+    	
       @Override
       public void onItemClick(AdapterView<?> adapter, View v, int position,
           long flags) {
+    	  
         showFragment(position);
       }
     });
@@ -364,25 +368,34 @@ public class MainActivity extends FragmentActivity {
       f = new FIFO();
       break;  
 
-
     default:
+    	
       return;
+      
     }
+    
     getSupportFragmentManager().beginTransaction().replace(R.id.content, f).commit();
 
     viewActionsContentView.showContent();
+    
   }
+  
   @Override
   public boolean onCreateOptionsMenu(Menu menu) {
       MenuInflater inflater = getMenuInflater();
       inflater.inflate(R.menu.main, menu);
+      
 	return true;
+	
   }
+  
   @Override
   public boolean onOptionsItemSelected(MenuItem item) {
+	  
      switch (item.getItemId()) {
      
          case R.id.builddate:
+        	 
               AlertDialog.Builder builddatealert = new AlertDialog.Builder(this);
 
                      builddatealert.setMessage("Saturday, June 15th, 2013");
@@ -396,10 +409,12 @@ public class MainActivity extends FragmentActivity {
 
                      builddatealert.show();
               break;
+              
          case R.id.changelog:
+        	 
    AlertDialog.Builder changelogalert = new AlertDialog.Builder(this);
 
-          changelogalert.setMessage("-Initial release.");
+          changelogalert.setMessage("Initial release.");
 
           changelogalert.setNeutralButton("OK", new DialogInterface.OnClickListener() {
 
@@ -409,12 +424,14 @@ public class MainActivity extends FragmentActivity {
           });
 
           changelogalert.show();
+          
           break;
           
          case R.id.version:
+        	 
    AlertDialog.Builder versionalert = new AlertDialog.Builder(this);
 
-          versionalert.setMessage("Alpha 1");
+          versionalert.setMessage("Alpha 1 (0.0.1a)");
 
           versionalert.setNeutralButton("OK", new DialogInterface.OnClickListener() {
 
@@ -424,10 +441,11 @@ public class MainActivity extends FragmentActivity {
           });
 
           versionalert.show();
-          break;
           
+          break;       
 
      }
+     
      return true;
   }
 }
