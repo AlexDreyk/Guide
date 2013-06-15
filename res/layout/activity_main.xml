@@ -2,23 +2,26 @@
     xmlns:app="http://schemas.android.com/apk/res/sample.actionscontentview"
     xmlns:app1="http://schemas.android.com/apk/res/com.example.navigationsample"
     xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app2="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:ignore="UnusedNamespace" xmlns:app2="http://schemas.android.com/apk/res-auto">
+    tools:ignore="UnusedNamespace" >
 
- <shared.ui.actionscontentview.ActionsContentView
-     xmlns:app="http://schemas.android.com/apk/res-auto"
-     android:id="@+id/actionsContentView"
-     android:layout_width="match_parent"
-     android:layout_height="match_parent"
-     android:layout_alignParentBottom="true"
-     android:layout_alignParentLeft="true"
-     app:content_layout="@layout/content"
-     app:fade_type="actions"
-     app:shadow_drawable="@drawable/shadow"
-     app:swiping_type="full"
-     app2:actions_layout="@layout/actions"
-     app2:actions_spacing="@dimen/actions_spacing" >
- </shared.ui.actionscontentview.ActionsContentView>
+    <shared.ui.actionscontentview.ActionsContentView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/actionsContentView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        app:content_layout="@layout/content"
+        app:fade_type="actions"
+        app:shadow_drawable="@drawable/shadow"
+        app:swiping_type="full"
+        app2:actions_layout="@layout/actions"
+        app2:actions_spacing="@dimen/actions_spacing" >
+
+    </shared.ui.actionscontentview.ActionsContentView>
 
 </RelativeLayout>
