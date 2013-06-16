@@ -504,7 +504,7 @@ public class MainActivity extends FragmentActivity {
         	 
    AlertDialog.Builder changelogalert = new AlertDialog.Builder(this);
 
-          changelogalert.setMessage("");
+          changelogalert.setMessage("Fixed the mistake at Force GPU Rendering");
 
           changelogalert.setNeutralButton("OK", new DialogInterface.OnClickListener() {
 
