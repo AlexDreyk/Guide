@@ -13,7 +13,7 @@ public class ForceGPURendering extends Fragment {
 	  @Override
 	  public View onCreateView(LayoutInflater inflater, ViewGroup container,
 	      Bundle savedInstanceState) {
-	    final View v = inflater.inflate(R.layout.bfqlayout, container, false);
+	    final View v = inflater.inflate(R.layout.forcegpurendering, container, false);
 	    return v;
 	  }
 	}
