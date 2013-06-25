@@ -18,17 +18,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:showDividers="beginning" >
+    android:orientation="vertical">
 
     <ListView
         android:id="@+id/actions"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
-        android:background="@android:color/darker_gray"
-        android:cacheColorHint="@android:color/darker_gray"
+        android:background="@color/actions_bg"
+        android:cacheColorHint="@color/bg2"
         android:divider="@null"
-        android:textColor="@color/white"
         tools:listitem="@android:layout/simple_list_item_1" >
     </ListView>
 

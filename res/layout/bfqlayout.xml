@@ -8,7 +8,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentRight="true"
         android:layout_centerVertical="true"
-        android:text="@string/gives_each_request_a_time_budget_if_the_request_is_not_met_by_the_time_it_is_given_the_request_is_skipped_smarter_than_the_cfq_governor_" />
+        android:text="@string/bfq_def" />
 
     <TextView
         android:id="@+id/textView2"

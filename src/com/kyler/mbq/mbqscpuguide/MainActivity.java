@@ -13,7 +13,6 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
-
 import com.kyler.mbq.mbqscpuguide.Algorithms.Cubic;
 import com.kyler.mbq.mbqscpuguide.Algorithms.Hybla;
 import com.kyler.mbq.mbqscpuguide.Algorithms.Reno;
@@ -70,7 +69,7 @@ public class MainActivity extends FragmentActivity {
 
   private ActionsContentView viewActionsContentView;
 
-  @Override
+@Override
   protected void onCreate(Bundle savedInstanceState) {
 	  
     super.onCreate(savedInstanceState);
@@ -401,60 +400,56 @@ public class MainActivity extends FragmentActivity {
     case 44:
       f = new Westwood();
       break;
-      	
-    case 45:
-      f = new FIFO();
-      break; 
       
-    case 46:
+    case 45:
       f = new AndroidTips();
       break;
       
-    case 47:
+    case 46:
       f = new DeveloperOptions();
       break;
           
-    case 48:
+    case 47:
       f = new ForceGPURendering();
       break;
           
-    case 49:
+    case 48:
       f = new WiFiDuringSleep();
       break;
       	
-    case 50:
+    case 49:
       f = new WiFiScanInterval();
       break;
       	
-    case 51:
+    case 50:
       f = new BetterBatteryLife();
       break;  
         
-    case 52:
+    case 51:
       f = new StatusBarAndQS();
       break;
             
-    case 53:
+    case 52:
       f = new AutoBrightnessSucks();
       break;
             
-    case 54:
+    case 53:
       f = new ChangeDensity();
         break;
           
-    case 55:
+    case 54:
       f = new ChangeBootAnimation();
         break;
             
-    case 56:
+    case 55:
       f = new BlockAds();
       break;
         	
-    case 57:
+    case 56:
       f = new MSAA();
       break;
         	
-    case 58:
+    case 57:
       f = new zRAM();
       break; 
 
@@ -488,7 +483,7 @@ public class MainActivity extends FragmentActivity {
         	 
               AlertDialog.Builder builddatealert = new AlertDialog.Builder(this);
 
-                     builddatealert.setMessage("Saturday, June 15th, 2013");
+                     builddatealert.setMessage("Monday, June 24th, 2013");
 
                      builddatealert.setNeutralButton("OK", new DialogInterface.OnClickListener() {
 
@@ -504,7 +499,7 @@ public class MainActivity extends FragmentActivity {
         	 
    AlertDialog.Builder changelogalert = new AlertDialog.Builder(this);
 
-          changelogalert.setMessage("Fixed the mistake at Force GPU Rendering");
+          changelogalert.setMessage("Fix background drawer color, fix any bugs, other minor optimizations");
 
           changelogalert.setNeutralButton("OK", new DialogInterface.OnClickListener() {
 
@@ -521,7 +516,7 @@ public class MainActivity extends FragmentActivity {
         	 
    AlertDialog.Builder versionalert = new AlertDialog.Builder(this);
 
-          versionalert.setMessage("Alpha 3 (0.0.3a)");
+          versionalert.setMessage("Alpha 4 (0.0.4a)");
 
           versionalert.setNeutralButton("OK", new DialogInterface.OnClickListener() {
 

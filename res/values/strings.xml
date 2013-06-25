@@ -15,6 +15,6 @@
     <string name="help">Help</string>
     <string name="general">General</string>
     <string name="governors">Governors</string>
-    <string name="gives_each_request_a_time_budget_if_the_request_is_not_met_by_the_time_it_is_given_the_request_is_skipped_smarter_than_the_cfq_governor_">Gives each request a time budget. If the request is not met by the time it is given, the request is skipped. Smarter than the CFQ governor.</string>
+    <string name="bfq_def">Gives each request a time budget. If the request is not met by the time it is given, the request is skipped. Smarter than the CFQ governor.</string>
     <string name="bfq">BFQ</string>
 </resources>
