@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <!--
   Copyright 2012 Steven Rudenko
   
@@ -14,7 +15,9 @@
   limitations under the License.
 -->
 <resources>
-
-    <style name="AppTheme" parent="android:Theme.Holo" />
-
+    <bool name="default_pref_show_shadow">true</bool>
+    <dimen name="default_pref_shadow_width">16dip</dimen>
+    <integer name="default_pref_fade_max_value">170</integer>
+    <integer name="default_pref_fling_delay">900</integer>
+    <dimen name="default_pref_swiping_edge_width">48dip</dimen>
 </resources>

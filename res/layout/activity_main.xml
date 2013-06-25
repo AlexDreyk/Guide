@@ -1,28 +1,37 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res/sample.actionscontentview"
-    xmlns:app1="http://schemas.android.com/apk/res/com.example.navigationsample"
-    xmlns:tools="http://schemas.android.com/tools"
-    xmlns:app2="http://schemas.android.com/apk/res-auto"
+
+<!--
+  Copyright 2012 Steven Rudenko
+  
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+  
+    http://www.apache.org/licenses/LICENSE-2.0
+  
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+-->
+<RelativeLayout xmlns:app="http://schemas.android.com/apk/res/sample.actionscontentview"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:ignore="UnusedNamespace" >
+    android:layout_height="match_parent" xmlns:android="http://schemas.android.com/apk/res/android">
 
     <shared.ui.actionscontentview.ActionsContentView
         xmlns:app="http://schemas.android.com/apk/res-auto"
         android:id="@+id/actionsContentView"
-        android:background="@color/white"
-        android:textColor="@color/defaultTextColor"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
+        app:actions_layout="@layout/actions"
+        app:actions_spacing="@dimen/actions_spacing"
         app:content_layout="@layout/content"
+        app:fade_max_value="@integer/default_pref_fade_max_value"
         app:fade_type="actions"
+        app:swiping_type="full"        
+        app:fling_duration="@integer/default_pref_fling_delay"
         app:shadow_drawable="@drawable/shadow"
-        app:swiping_type="full"
-        app2:actions_layout="@layout/actions"
-        app2:actions_spacing="@dimen/actions_spacing" >
+        app:shadow_width="@dimen/default_pref_shadow_width" >
 
     </shared.ui.actionscontentview.ActionsContentView>
 

@@ -13,6 +13,7 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
+
 import com.kyler.mbq.mbqscpuguide.Algorithms.Cubic;
 import com.kyler.mbq.mbqscpuguide.Algorithms.Hybla;
 import com.kyler.mbq.mbqscpuguide.Algorithms.Reno;
@@ -499,7 +500,8 @@ public class MainActivity extends FragmentActivity {
         	 
    AlertDialog.Builder changelogalert = new AlertDialog.Builder(this);
 
-          changelogalert.setMessage("Fix background drawer color, fix any bugs, other minor optimizations");
+          changelogalert.setMessage("Fix background drawer color, fix any bugs, other minor optimizations" +
+          		"as well as re-themed the app, and adjusted some code in the library.");
 
           changelogalert.setNeutralButton("OK", new DialogInterface.OnClickListener() {
 

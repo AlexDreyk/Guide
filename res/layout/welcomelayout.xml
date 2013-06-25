@@ -16,7 +16,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/welcome"
-        android:textColor="@color/defaultTextColor"
         android:layout_centerHorizontal="true"
         android:text="@string/please_slide_left_to_open_the_menu_" 
         android:textSize="19sp" />

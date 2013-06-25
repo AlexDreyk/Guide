@@ -17,4 +17,5 @@
     <string name="governors">Governors</string>
     <string name="bfq_def">Gives each request a time budget. If the request is not met by the time it is given, the request is skipped. Smarter than the CFQ governor.</string>
     <string name="bfq">BFQ</string>
+    <string name="link_to_sources">source code is here &#187;</string>   
 </resources>
