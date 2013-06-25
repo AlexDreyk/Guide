@@ -484,7 +484,7 @@ public class MainActivity extends FragmentActivity {
         	 
               AlertDialog.Builder builddatealert = new AlertDialog.Builder(this);
 
-                     builddatealert.setMessage("Monday, June 24th, 2013");
+                     builddatealert.setMessage("TBA, 2013");
 
                      builddatealert.setNeutralButton("OK", new DialogInterface.OnClickListener() {
 
@@ -500,8 +500,7 @@ public class MainActivity extends FragmentActivity {
         	 
    AlertDialog.Builder changelogalert = new AlertDialog.Builder(this);
 
-          changelogalert.setMessage("Fix background drawer color, fix any bugs, other minor optimizations" +
-          		"as well as re-themed the app, and adjusted some code in the library.");
+          changelogalert.setMessage("");
 
           changelogalert.setNeutralButton("OK", new DialogInterface.OnClickListener() {
 
@@ -518,7 +517,7 @@ public class MainActivity extends FragmentActivity {
         	 
    AlertDialog.Builder versionalert = new AlertDialog.Builder(this);
 
-          versionalert.setMessage("Alpha 4 (0.0.4a)");
+          versionalert.setMessage("Alpha 5 (0.0.5a)");
 
           versionalert.setNeutralButton("OK", new DialogInterface.OnClickListener() {
 
