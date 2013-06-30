@@ -23,8 +23,8 @@
     android:id="@+id/actions"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/black"
-    android:cacheColorHint="@color/actions_bg"
+    android:background="@color/actions_bg"
+    android:cacheColorHint="@color/black"
     android:drawSelectorOnTop="true" >
     android:listSelector="@drawable/item_background_holo_light" />
 </ListView>
