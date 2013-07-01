@@ -15,23 +15,31 @@
   limitations under the License.
 -->
 <RelativeLayout xmlns:app="http://schemas.android.com/apk/res/sample.actionscontentview"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app1="http://schemas.android.com/apk/res/com.kyler.mbq.mbqscpuguide"
     android:layout_width="match_parent"
-    android:layout_height="match_parent" xmlns:android="http://schemas.android.com/apk/res/android">
+    android:layout_height="match_parent"
+    android:background="@color/black" >
 
     <shared.ui.actionscontentview.ActionsContentView
         xmlns:app="http://schemas.android.com/apk/res-auto"
         android:id="@+id/actionsContentView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/actions_bg"
+        android:padding="@dimen/default_actionscontentview_swiping_edge_width"
         app:actions_layout="@layout/actions"
         app:actions_spacing="@dimen/actions_spacing"
         app:content_layout="@layout/content"
         app:fade_max_value="@integer/default_pref_fade_max_value"
         app:fade_type="actions"
-        app:swiping_type="full"        
         app:fling_duration="@integer/default_pref_fling_delay"
         app:shadow_drawable="@drawable/shadow"
-        app:shadow_width="@dimen/default_pref_shadow_width" >
+        app:shadow_width="@dimen/default_pref_shadow_width"
+        app:swiping_type="full"
+        app1:effects="scroll_opening" >
 
     </shared.ui.actionscontentview.ActionsContentView>
 

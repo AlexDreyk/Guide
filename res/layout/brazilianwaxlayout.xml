@@ -7,8 +7,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
+        android:textColor="@color/black"
         android:layout_centerVertical="true"
-        android:text="Similar to smartassV2, the only real difference is, it scales more aggressively than SAv2 does, which reduces battery life, while improving performance."
+        android:text="@string/brazilian_wax_definition"
         android:textAppearance="?android:attr/textAppearanceSmall" />
 
     <TextView
@@ -16,9 +17,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_above="@+id/textView1"
+        android:textColor="@color/black"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="54dp"
-        android:text="BrazilianWax"
+        android:text="@string/brazilianwax"
         android:textAppearance="?android:attr/textAppearanceMedium" />
 
 </RelativeLayout>

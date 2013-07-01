@@ -7,17 +7,19 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
+        android:textColor="@color/black"
         android:layout_centerVertical="true"
-        android:text="4 times MultiSample Anti-Aliasing. What this does is smooths out edges in apps that support AA. It makes your game look better, enhances graphics, but has the potential to degrade performance due to the screen enhancement. To enable this, go to settings>developer options>and check the box that says 'Force 4x MSAA'" />
+        android:text="@string/msaa_content" />
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_above="@+id/textView1"
+        android:textColor="@color/black"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="54dp"
-        android:text="4x MSAA"
+        android:text="@string/_4x_msaa"
         android:textAppearance="?android:attr/textAppearanceMedium" />
 
 </RelativeLayout>

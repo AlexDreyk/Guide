@@ -7,8 +7,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
+        android:textColor="@color/black"
         android:layout_centerVertical="true"
-        android:text="Only uses your max screen on frequency, and your min screen on frequency."
+        android:text="@string/minmax_definition"
         android:textAppearance="?android:attr/textAppearanceSmall" />
 
     <TextView
@@ -16,9 +17,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_above="@+id/textView1"
+        android:textColor="@color/black"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="54dp"
-        android:text="Min Max"
+        android:text="@string/min_max"
         android:textAppearance="?android:attr/textAppearanceMedium" />
 
 </RelativeLayout>

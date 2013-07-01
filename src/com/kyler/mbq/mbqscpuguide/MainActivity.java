@@ -74,8 +74,10 @@ public class MainActivity extends FragmentActivity {
   protected void onCreate(Bundle savedInstanceState) {
 	  
     super.onCreate(savedInstanceState);
+    
     setContentView(R.layout.activity_main);
 
+    
     viewActionsContentView = (ActionsContentView) findViewById(R.id.actionsContentView);
 
     final ListView viewActionsList = (ListView) findViewById(R.id.actions);
@@ -213,10 +215,12 @@ public class MainActivity extends FragmentActivity {
           long flags) {
     	  
         showFragment(position);
+        
       }
     });
 
     showFragment(0);
+    
   }
 
   private void showFragment(int position) {
@@ -484,7 +488,7 @@ public class MainActivity extends FragmentActivity {
         	 
               AlertDialog.Builder builddatealert = new AlertDialog.Builder(this);
 
-                     builddatealert.setMessage("TBA, 2013");
+                     builddatealert.setMessage("July 1st, 2013");
 
                      builddatealert.setNeutralButton("OK", new DialogInterface.OnClickListener() {
 
@@ -500,7 +504,17 @@ public class MainActivity extends FragmentActivity {
         	 
    AlertDialog.Builder changelogalert = new AlertDialog.Builder(this);
 
-          changelogalert.setMessage("");
+          changelogalert.setMessage(
+        		  
+        	    " -Re-factored some strings                                                                        " +
+          
+          		" -fixed misspellings                                                                              " +
+          		
+        		" -Added missing definitions                                                                       " +
+        		
+        		" -A waaay better theme now                                                                        " +
+        		
+        		" -Tons of back end changes to futher optimize the app.                                            " );
 
           changelogalert.setNeutralButton("OK", new DialogInterface.OnClickListener() {
 
@@ -535,4 +549,3 @@ public class MainActivity extends FragmentActivity {
      return true;
   }
 }
-

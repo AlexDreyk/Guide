@@ -7,8 +7,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
+        android:textColor="@color/black"
         android:layout_centerVertical="true"
-        android:text="It handles requests in a basic 'first in, first out' order. So any requests that come in, will also be the first to be executed."
+        android:text="@string/noop_definition"
         android:textAppearance="?android:attr/textAppearanceSmall" />
 
     <TextView
@@ -17,8 +18,9 @@
         android:layout_height="wrap_content"
         android:layout_above="@+id/textView1"
         android:layout_centerHorizontal="true"
+        android:textColor="@color/black"
         android:layout_marginBottom="54dp"
-        android:text="Noop"
+        android:text="@string/noop"
         android:textAppearance="?android:attr/textAppearanceMedium" />
 
 </RelativeLayout>

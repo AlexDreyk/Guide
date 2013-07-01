@@ -7,18 +7,20 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
+        android:textColor="@color/black"
         android:layout_centerVertical="true"
-        android:text="Small Text"
+        android:text="@string/nephilims_settings_content"
         android:textAppearance="?android:attr/textAppearanceSmall" />
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textColor="@color/black"
         android:layout_above="@+id/textView1"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="54dp"
-        android:text="Medium Text"
+        android:text="@string/nephilims_settings_header"
         android:textAppearance="?android:attr/textAppearanceMedium" />
 
 </RelativeLayout>

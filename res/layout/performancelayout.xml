@@ -8,7 +8,8 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
-        android:text="Will constantly run at the highest set CPU speed."
+        android:textColor="@color/black"
+        android:text="@string/performance_definition"
         android:textAppearance="?android:attr/textAppearanceSmall" />
 
     <TextView
@@ -18,7 +19,8 @@
         android:layout_above="@+id/textView1"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="54dp"
-        android:text="Performance"
+        android:textColor="@color/black"
+        android:text="@string/performance"
         android:textAppearance="?android:attr/textAppearanceMedium" />
 
 </RelativeLayout>

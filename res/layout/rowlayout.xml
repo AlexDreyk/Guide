@@ -8,7 +8,8 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
-        android:text="Read Over Write. It will cause better read times for pictures/media, but when transferring data/installing apps, significant reduction of performance will be present."
+        android:textColor="@color/black"
+        android:text="@string/row_definition"
         android:textAppearance="?android:attr/textAppearanceSmall" />
 
     <TextView
@@ -16,9 +17,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_above="@+id/textView1"
+        android:textColor="@color/black"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="54dp"
-        android:text="ROW"
+        android:text="@string/row"
         android:textAppearance="?android:attr/textAppearanceMedium" />
 
 </RelativeLayout>

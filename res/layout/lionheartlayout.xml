@@ -8,7 +8,8 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
-        android:text="Conservative-based governor off of Samsung update3 source (Line copied directly from a guide, thank you 'Amal Das'), scales aggressively. This Governor is strictly for performance."
+        android:textColor="@color/black"
+        android:text="@string/lionheart_definition"
         android:textAppearance="?android:attr/textAppearanceSmall" />
 
     <TextView
@@ -16,9 +17,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_above="@+id/textView1"
+        android:textColor="@color/black"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="54dp"
-        android:text="Lionheart"
+        android:text="@string/lionheart"
         android:textAppearance="?android:attr/textAppearanceMedium" />
 
 </RelativeLayout>

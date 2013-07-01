@@ -8,7 +8,8 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
-        android:text="A newer version of Reno, and another commonly used one. It controls parameters better, helping out streaming and overall quality of browsing the internet. One of the most 'fair' algorithms out there, and is one of the most efficient algorithms to date."
+        android:textColor="@color/black"
+        android:text="@string/westwood_definition"
         android:textAppearance="?android:attr/textAppearanceSmall" />
 
     <TextView
@@ -17,8 +18,9 @@
         android:layout_height="wrap_content"
         android:layout_above="@+id/textView1"
         android:layout_centerHorizontal="true"
+        android:textColor="@color/black"
         android:layout_marginBottom="54dp"
-        android:text="Westwood"
+        android:text="@string/westwood"
         android:textAppearance="?android:attr/textAppearanceMedium" />
 
 </RelativeLayout>

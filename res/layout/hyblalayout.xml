@@ -8,7 +8,8 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
-        android:text="Penalizes connections that use satellite radio. Not usually used with phones."
+        android:textColor="@color/black"
+        android:text="@string/hybla_definition"
         android:textAppearance="?android:attr/textAppearanceSmall" />
 
     <TextView
@@ -16,9 +17,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_above="@+id/textView1"
+        android:textColor="@color/black"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="54dp"
-        android:text="Hybla"
+        android:text="@string/hybla"
         android:textAppearance="?android:attr/textAppearanceMedium" />
 
 </RelativeLayout>

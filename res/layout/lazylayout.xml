@@ -8,7 +8,8 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
-        android:text="This Governor doesn't scale as fast. It's really a lazy governor, it tends to stick in the same CPU frequency without changing as much. Which can be beneficial to your battery (if your CPU settings are conservative) or can reduce battery life (if your chosen frequencies are aggressive)."
+        android:textColor="@color/black"
+        android:text="@string/lazy_definition"
         android:textAppearance="?android:attr/textAppearanceSmall" />
 
     <TextView
@@ -17,8 +18,9 @@
         android:layout_height="wrap_content"
         android:layout_above="@+id/textView1"
         android:layout_centerHorizontal="true"
+        android:textColor="@color/black"
         android:layout_marginBottom="54dp"
-        android:text="Lazy"
+        android:text="@string/lazy"
         android:textAppearance="?android:attr/textAppearanceMedium" />
 
 </RelativeLayout>

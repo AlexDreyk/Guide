@@ -7,18 +7,20 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
+        android:textColor="@color/black"
         android:layout_centerVertical="true"
-        android:text="A re-thought version of the original Governor. This one aims for ideal frequencies, meaning it makes up its own frequences in order to meet the requests the CPU needs. Scales down the CPU extremely fast once the screen is turned off, meaning you will get amazing standby times. No upper limit for the CPU frequencies in both the screen on and screen off state(s). (If you want a better detailed explanation of that, please ask.)"
+        android:text="@string/smartass_version_2_definition"
         android:textAppearance="?android:attr/textAppearanceSmall" />
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textColor="@color/black"
         android:layout_above="@+id/textView1"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="54dp"
-        android:text="SmartassV2"
+        android:text="@string/smartassv2"
         android:textAppearance="?android:attr/textAppearanceMedium" />
 
 </RelativeLayout>

@@ -7,17 +7,19 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
+        android:textColor="@color/black"
         android:layout_centerVertical="true"
-        android:text="What it does is, it force enabled 2D drawing (such as scrolling, and anything non-game/app related) to the Graphical Processing Unit, instead of the Central Processing unit. What does/can this do? It has the potential to save battery life, and takes some of the load off of your CPU, which increases overall smoothness and reduces lag." />
+        android:text="@string/force_gpu_rendering_content" />
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_above="@+id/textView1"
+        android:textColor="@color/black"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="54dp"
-        android:text="Force GPU Rendering"
+        android:text="@string/force_gpu_rendering"
         android:textAppearance="?android:attr/textAppearanceMedium" />
 
 </RelativeLayout>

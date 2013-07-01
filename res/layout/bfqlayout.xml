@@ -7,6 +7,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentRight="true"
+        android:textColor="@color/black"
         android:layout_centerVertical="true"
         android:text="@string/bfq_def" />
 
@@ -17,6 +18,7 @@
         android:layout_above="@+id/textView1"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="54dp"
+        android:textColor="@color/black"
         android:text="@string/bfq"
         android:textAppearance="?android:attr/textAppearanceMedium" />
    

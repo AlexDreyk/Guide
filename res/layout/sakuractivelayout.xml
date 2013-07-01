@@ -7,8 +7,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
+        android:textColor="@color/black"
         android:layout_centerVertical="true"
-        android:text="A governor based off of hotplug and ondemand. The phone hotplugs (when it can) when the screen is on, and can be described as a 'hybrid' of hotplug and ondemand"
+        android:text="@string/sakuractive_definition"
         android:textAppearance="?android:attr/textAppearanceSmall" />
 
     <TextView
@@ -16,9 +17,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_above="@+id/textView1"
+        android:textColor="@color/black"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="54dp"
-        android:text="Sakuractive"
+        android:text="@string/sakuractive"
         android:textAppearance="?android:attr/textAppearanceMedium" />
 
 </RelativeLayout>

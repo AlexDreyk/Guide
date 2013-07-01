@@ -8,7 +8,8 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
-        android:text="Conservative-based Governor with some smartass features. Ramps speed up one at a time, and ramps speed down one at a time (ask for description if you don't understand). Caps your screen off speed at 245MHz. Scales just like conservative would. This Governor is more for battery life than performance."
+        android:textColor="@color/black"
+        android:text="@string/scary_definition"
         android:textAppearance="?android:attr/textAppearanceSmall" />
 
     <TextView
@@ -17,8 +18,9 @@
         android:layout_height="wrap_content"
         android:layout_above="@+id/textView1"
         android:layout_centerHorizontal="true"
+        android:textColor="@color/black"
         android:layout_marginBottom="54dp"
-        android:text="Scary"
+        android:text="@string/scary"
         android:textAppearance="?android:attr/textAppearanceMedium" />
 
 </RelativeLayout>

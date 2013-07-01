@@ -8,16 +8,18 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
-        android:text="Before you freak out, I will give you what it means. What it means is this: how often your phone scans for a WiFi signal. Typically, it is 15 seconds. The recommended number is 300. To change it, you can typically find it in the build.prop manually edit it on your computer, or use an app such as ES file explorer and run it as root. Go to build.prop and look for: wifi.supplicant_scan_interval=x. And change x (usually 15) to 300, save, exit, and reboot. Please note it is not available with some ROMs that are driven towards a stock-ish feeling. Such as CM ROMs, or any derivative of that ROM." />
+        android:textColor="@color/black"
+        android:text="@string/wifi_scan_interval_content" />
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_above="@+id/textView1"
+        android:textColor="@color/black"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="54dp"
-        android:text="Wifi scan interval"
+        android:text="@string/wifi_scan_interval"
         android:textAppearance="?android:attr/textAppearanceMedium" />
 
 </RelativeLayout>

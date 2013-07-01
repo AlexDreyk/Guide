@@ -8,7 +8,8 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
-        android:text="A dynamic interactive Governor. This Governor dynamically adapts it's own CPU frequencies within your parameters based off the system(s) load."
+        android:textColor="@color/black"
+        android:text="@string/dyninteractive_definition"
         android:textAppearance="?android:attr/textAppearanceSmall" />
 
     <TextView
@@ -18,7 +19,8 @@
         android:layout_above="@+id/textView1"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="54dp"
-        android:text="DynInteractive"
+        android:textColor="@color/black"
+        android:text="@string/dyninteractive"
         android:textAppearance="?android:attr/textAppearanceMedium" />
 
 </RelativeLayout>

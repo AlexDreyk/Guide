@@ -1,14 +1,16 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
-    android:layout_height="fill_parent" >
+    android:layout_height="fill_parent"
+    android:background="@color/white" >
 
     <TextView
         android:id="@+id/textView1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
+        android:textColor="@color/black"
         android:layout_centerVertical="true"
-        android:text="Controls the CPU speeds and how processes are handled."
+        android:text="@string/cpu_governors_content"
         android:textAppearance="?android:attr/textAppearanceSmall" />
 
     <TextView
@@ -18,7 +20,8 @@
         android:layout_above="@+id/textView1"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="54dp"
-        android:text="CPU Governors"
-        android:textAppearance="?android:attr/textAppearanceMedium" />
+        android:text="@string/cpu_governors"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/black" />
 
 </RelativeLayout>

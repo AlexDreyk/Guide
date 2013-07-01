@@ -8,7 +8,8 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
-        android:text="Best for benchmarks due to performance of requests, but is considered unstable due to random drops in performance. Semi-based off of the CFQ scheduler."
+        android:textColor="@color/black"
+        android:text="@string/vr_definition"
         android:textAppearance="?android:attr/textAppearanceSmall" />
 
     <TextView
@@ -16,9 +17,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_above="@+id/textView1"
+        android:textColor="@color/black"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="54dp"
-        android:text="V(R)"
+        android:text="@string/v_r_"
         android:textAppearance="?android:attr/textAppearanceMedium" />
 
 </RelativeLayout>

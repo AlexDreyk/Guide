@@ -7,8 +7,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
+        android:textColor="@color/black"
         android:layout_centerVertical="true"
-        android:text="Based off of SmartassV2, similar to BrazilianWax, but this Governor tends to favor battery over performance. From personal experience, I can say it does a great job of doing so."
+        android:text="@string/savagedzen_definition"
         android:textAppearance="?android:attr/textAppearanceSmall" />
 
     <TextView
@@ -16,9 +17,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_above="@+id/textView1"
+        android:textColor="@color/black"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="54dp"
-        android:text="SavagedZen"
+        android:text="@string/savagedzen"
         android:textAppearance="?android:attr/textAppearanceMedium" />
 
 </RelativeLayout>

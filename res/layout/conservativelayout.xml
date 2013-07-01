@@ -7,8 +7,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
+        android:textColor="@color/black"
         android:layout_centerVertical="true"
-        android:text="Conservative means that it scales conservatively, not that it is conservative. It pretty much very similiar to Interactive in that it scales up and down in frequency steps. It actually can be one of the most aggressive governors out there. "
+        android:text="@string/conservative_definition"
         android:textAppearance="?android:attr/textAppearanceSmall" />
 
     <TextView
@@ -16,9 +17,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_above="@+id/textView1"
+        android:textColor="@color/black"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="54dp"
-        android:text="Conservative"
+        android:text="@string/conservative"
         android:textAppearance="?android:attr/textAppearanceMedium" />
 
 </RelativeLayout>

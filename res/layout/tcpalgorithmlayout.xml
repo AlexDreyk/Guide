@@ -6,9 +6,10 @@
         android:id="@+id/textView1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textColor="@color/black"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
-        android:text="Control incoming packets, and timeout connections are handled, as well as basically anything internet-related"
+        android:text="@string/tcp_algorithms_information"
         android:textAppearance="?android:attr/textAppearanceSmall" />
 
     <TextView
@@ -16,9 +17,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_above="@+id/textView1"
+        android:textColor="@color/black"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="54dp"
-        android:text="TCP Algorithms"
+        android:text="@string/tcp_algorithms_header"
         android:textAppearance="?android:attr/textAppearanceMedium" />
 
 </RelativeLayout>

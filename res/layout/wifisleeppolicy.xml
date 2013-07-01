@@ -8,7 +8,8 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
-        android:text="What it does is, as this ^ suggests, keeps WiFi on while your phone is awake. To enable this, (and there are many ways.. I'll give you the way I'd do it.) Go to settings>WiFi>WiFi settings (3 vertical dots)>Advanced settings>keep WiFi on during sleep.. And set it to 'always' or.. You can use tricksterMOD and enable that via the GUI (Graphical User Interface)" />
+        android:textColor="@color/black"
+        android:text="@string/wifi_sleep_policy_content" />
 
     <TextView
         android:id="@+id/textView2"
@@ -17,7 +18,8 @@
         android:layout_above="@+id/textView1"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="54dp"
-        android:text="WiFi on during sleep"
+        android:textColor="@color/black"
+        android:text="@string/wifi_on_during_sleep"
         android:textAppearance="?android:attr/textAppearanceMedium" />
 
 </RelativeLayout>
