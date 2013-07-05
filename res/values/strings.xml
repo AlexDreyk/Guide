@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
+	
+	
 <resources>
 
     <string name="app_name">MBQs CPU Guide</string>
@@ -7,8 +9,9 @@
     <string name="theme">Theme</string>
     <string name="changelog">Changelog</string>
     <string name="version">Version</string>
+	<string name="current_version">Alpha 6</string>
     <string name="welcome_to_my_cpu_guide_">Welcome to my CPU Guide!</string>
-    <string name="please_slide_left_to_open_the_menu_">Please slide left to open the menu.</string>
+    <string name="please_slide_right_to_open_the_menu_">Please slide right to open the menu.</string>
     <string name="cpu_governors">CPU Governors</string>
     <string name="i_o_schedulers">I/O Schedulers</string>
     <string name="tcp_algorithms">TCP Algorithms</string>
@@ -128,4 +131,5 @@
     <string name="wifi_on_during_sleep">WiFi on during sleep</string>
     <string name="zram_information_content">Avoids disk paging, compresses your RAM. Disk paging means the way your phone saves temporary data. It helps with fragmentation of your disk and the physical space, which, over time, keeps speed stable and prevents any system slowdowns.</string>
     <string name="zram_information">zRAM Information</string>   
+	
 </resources>

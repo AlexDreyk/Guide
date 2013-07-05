@@ -18,7 +18,7 @@
     android:id="@android:id/text1"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:drawablePadding="6dip"
+    android:drawablePadding="8dip"
     android:drawingCacheQuality="high"
     android:gravity="center_vertical"
     android:minHeight="48dip"
@@ -27,6 +27,5 @@
     android:singleLine="true"
     android:textColor="@color/black"
     android:textIsSelectable="false"
-    android:textStyle="italic"
     android:typeface="serif" />
 
