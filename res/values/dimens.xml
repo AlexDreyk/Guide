@@ -5,6 +5,6 @@
     <dimen name="activity_vertical_margin">14dp</dimen>
     <dimen name="divider_size">.9dp</dimen>
     <dimen name="divider_large_size">1.5dp</dimen>
-    <dimen name="actions_spacing">44dp</dimen>
+    <dimen name="actions_spacing">36dp</dimen>
 
 </resources>

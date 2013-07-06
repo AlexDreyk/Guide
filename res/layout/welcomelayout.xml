@@ -13,7 +13,7 @@
         android:textSize="28sp" />
 
     <TextView
-        android:id="@+id/slideleft"
+        android:id="@+id/slideright"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/welcome"
