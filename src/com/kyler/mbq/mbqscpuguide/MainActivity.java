@@ -488,7 +488,7 @@ public class MainActivity extends FragmentActivity {
         	 
               AlertDialog.Builder builddatealert = new AlertDialog.Builder(this);
 
-                     builddatealert.setMessage("July 1st, 2013");
+                     builddatealert.setMessage("July 5th, 2013");
 
                      builddatealert.setNeutralButton("OK", new DialogInterface.OnClickListener() {
 
@@ -499,39 +499,12 @@ public class MainActivity extends FragmentActivity {
 
                      builddatealert.show();
               break;
-              
-         case R.id.changelog:
-        	 
-   AlertDialog.Builder changelogalert = new AlertDialog.Builder(this);
-
-          changelogalert.setMessage(
-        		  
-        	    " -Re-factored some strings                                                                        " +
-          
-          		" -fixed misspellings                                                                              " +
-          		
-        		" -Added missing definitions                                                                       " +
-        		
-        		" -A waaay better theme now                                                                        " +
-        		
-        		" -Tons of back end changes to futher optimize the app.                                            " );
-
-          changelogalert.setNeutralButton("OK", new DialogInterface.OnClickListener() {
-
-              public void onClick(DialogInterface arg0, int arg1) {
-
-              }
-          });
-
-          changelogalert.show();
-          
-          break;
           
          case R.id.version:
         	 
    AlertDialog.Builder versionalert = new AlertDialog.Builder(this);
 
-          versionalert.setMessage("Alpha 5 (0.0.5a)");
+          versionalert.setMessage("Alpha 6 (0.0.6a)");
 
           versionalert.setNeutralButton("OK", new DialogInterface.OnClickListener() {
 
