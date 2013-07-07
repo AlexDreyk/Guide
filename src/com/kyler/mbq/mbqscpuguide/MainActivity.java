@@ -66,12 +66,7 @@ import com.kyler.mbq.mbqscpuguide.Tips.WiFiDuringSleep;
 import com.kyler.mbq.mbqscpuguide.Tips.WiFiScanInterval;
 import com.kyler.mbq.mbqscpuguide.Tips.zRAM;
 
-import eu.inmite.android.lib.dialogs.ISimpleDialogCancelListener;
-import eu.inmite.android.lib.dialogs.ISimpleDialogListener;
-
-public class CPUGuideActivity extends FragmentActivity implements DefinitionDialogListener {
-
-CPUGuideActivity c = this;
+public class MainActivity extends FragmentActivity {
 
   private ActionsContentView viewActionsContentView;
 
@@ -526,10 +521,4 @@ CPUGuideActivity c = this;
      
      return true;
   }
-
-@Override
-public void onListItemSelected(String value, int number) {
-	// TODO Auto-generated method stub
-	
-}
 }
