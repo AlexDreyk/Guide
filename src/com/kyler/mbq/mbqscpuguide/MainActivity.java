@@ -488,7 +488,7 @@ public class MainActivity extends FragmentActivity {
         	 
               AlertDialog.Builder builddatealert = new AlertDialog.Builder(this);
 
-                     builddatealert.setMessage("July 5th, 2013");
+                     builddatealert.setMessage("July 8th, 2013");
 
                      builddatealert.setNeutralButton("OK", new DialogInterface.OnClickListener() {
 
