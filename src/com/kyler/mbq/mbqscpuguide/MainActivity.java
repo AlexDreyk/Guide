@@ -488,7 +488,7 @@ public class MainActivity extends FragmentActivity {
         	 
               AlertDialog.Builder builddatealert = new AlertDialog.Builder(this);
 
-                     builddatealert.setMessage("July 8th, 2013");
+                     builddatealert.setMessage("July Xth, 2013");
 
                      builddatealert.setNeutralButton("OK", new DialogInterface.OnClickListener() {
 
@@ -504,7 +504,7 @@ public class MainActivity extends FragmentActivity {
         	 
    AlertDialog.Builder versionalert = new AlertDialog.Builder(this);
 
-          versionalert.setMessage("Alpha 6 (0.0.6a)");
+          versionalert.setMessage("Alpha 6 (0.0.7a)");
 
           versionalert.setNeutralButton("OK", new DialogInterface.OnClickListener() {
 
