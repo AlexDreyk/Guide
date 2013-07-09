@@ -8,7 +8,7 @@
     <string name="build_date">Build Date</string>
     <string name="theme">Theme</string>
     <string name="version">Version</string>
-    <string name="welcome_to_my_cpu_guide_">Welcome to my CPU Guide!</string>
+    <string name="welcome_to_my_cpu_guide_">Welcome to alpha 6 of my CPU Guide.</string>
     <string name="please_slide_right_to_open_the_menu_">Please slide right to open the menu.</string>
     <string name="cpu_governors">CPU Governors</string>
     <string name="i_o_schedulers">I/O Schedulers</string>
@@ -20,7 +20,7 @@
     <string name="bfq">BFQ</string>
     <string name="android_tips_section">Android tips section</string>
     <string name="tips">Tips</string>
-    <string name="autobrightness_info">Download an app called \'lux\' and use that app. It\'ll take of any problems you\'re having, plus it\'ll save battery.</string>
+    <string name="autobrightness_info">Download an app called \'lux\' and use that app. It\'ll take of any problems you\'re having, plus it\'ll save you battery.</string>
     <string name="autobrightness_sucks">Auto-brightness sucks</string>
     <string name="better_battery_life_content">TBD</string>
     <string name="better_battery_life_header">Better battery life</string>
@@ -41,9 +41,9 @@
     <string name="cubic">Cubic</string>
     <string name="deadline_definition">Set to minimize starving of requests. In other words, it is designed to handle system requests as quickly as possible.</string>
     <string name="deadline">Deadline</string>
-    <string name="developer_options_content">Go to settings>build number... And tap \'build number\' 7 times, go back, and you have now enabled developer options.</string>
+    <string name="developer_options_content">Go to settings > build number... And tap \'build number\' 7 times. Go back, and you have now enabled developer options!</string>
     <string name="developer_options">Developer options</string>
-    <string name="dyninteractive_definition">A dynamic interactive Governor. This Governor dynamically adapts it\'s own CPU frequencies within your parameters based off the system(s) load.</string>
+    <string name="dyninteractive_definition">A dynamic-interactive Governor. This Governor dynamically adapts it\'s own CPU frequencies within your parameters based off the system(s) load.</string>
     <string name="dyninteractive">DynInteractive</string>
     <string name="fifo_definition">Takes each process in one by one, fair process queuing, balanced queue handling as well, processes go in and out in a numerical</string>
     <string name="fifo">FIFO</string>
@@ -55,9 +55,9 @@
     <string name="help_header_in_layout">Coming soon.</string>
     <string name="hotplug_definition">Based off of Ondemand. It allows a CPU to go offline with minimal usage. When you\'re sending messages, browsing settings, or other simple tasks, most likely one of your CPUs will be offline.</string>
     <string name="hotplug">Hotplug</string>
-    <string name="hotplug_x_definition">Its basically a smarter Hotplug, to my knowledge, it shuts off the second core much faster, and is a little bit smarter with CPU scaling and power efficiency.</string>
+    <string name="hotplug_x_definition">It\'s basically a smarter Hotplug. To my knowledge, it shuts off the second core much faster, and is a little bit smarter with CPU scaling and power efficiency.</string>
     <string name="hotplugx">HotplugX</string>
-    <string name="hybla_definition">Penalizes connections that use satellite radio. Not usually used with phones.</string>
+    <string name="hybla_definition">Penalizes connections that use satellite radio. Not usually used much.</string>
     <string name="hybla">Hybla</string>
     <string name="interactive_definition">Interactive scales by default in steps towards max frequency, Ondemand in its default implementation scales immediately to max frequency. (AndreiLux)</string>
     <string name="interactive">Interactive</string>
@@ -87,15 +87,15 @@
     <string name="ondemand">OnDemand</string>
     <string name="ondemandplus_definition">A governor based off of OnDemand and Interactive. It provides a balance between performance, and saving battery.</string>
     <string name="ondemandplus">OndemandPlus</string>
-    <string name="pegasusq_definition">Samsungs Governor for multi-core phones. Based off of Ondemand. This kernel controls hotplugging as well.</string>
+    <string name="pegasusq_definition">Samsungs own Governor for multi-core phones. Based off of Ondemand. This kernel controls hotplugging as well.</string>
     <string name="pegasusq">PegasusQ</string>
     <string name="performance_definition">Will constantly run at the highest set CPU speed.</string>
     <string name="performance">Performance</string>
-    <string name="powersave_definition">Will constantly use your lowest set CPU speed.</string>
+    <string name="powersave_definition">Will constantly use your min CPU speed.</string>
     <string name="powersave">Powersave</string>
-    <string name="reno_definition">Basically the same as Tahoe, but.. if 3 of the same packets are received, it will halve the window, instead of reducing it to one MSS. It changes the slow start threshold equal to that of the congestion window.</string>
+    <string name="reno_definition">Basically the same as Tahoe, but.. if 3 of the same packets are received, it will halve the window, instead of reducing it to one MS. It changes the slow start threshold equal to that of the congestion window.</string>
     <string name="reno">Reno</string>
-    <string name="row_definition">Read Over Write. It will cause better read times for pictures/media, but when transferring data/installing apps, significant reduction of performance will be present.</string>
+    <string name="row_definition">Read-Over-Write. It will give better read times for pictures/media, but when transferring data/installing apps, significant reduction of performance will be present.</string>
     <string name="row">ROW</string>
     <string name="sakuractive_definition">A governor based off of hotplug and ondemand. The phone hotplugs (when it can) when the screen is on, and can be described as a \'hybrid\' of hotplug and ondemand</string>
     <string name="sakuractive">Sakuractive</string>
@@ -125,7 +125,7 @@
     <string name="westwood">Westwood</string>
     <string name="wifi_scan_interval_content">Before you freak out, I will give you what it means. What it means is this: how often your phone scans for a WiFi signal. Typically, it is 15 seconds. The recommended number is 300. To change it, you can typically find it in the build.prop manually edit it on your computer, or use an app such as ES file explorer and run it as root. Go to build.prop and look for: wifi.supplicant_scan_interval=x. And change x (usually 15) to 300, save, exit, and reboot. Please note it is not available with some ROMs that are driven towards a stock-ish feeling. Such as CM ROMs, or any derivative of that ROM.</string>
     <string name="wifi_scan_interval">Wifi scan interval</string>
-    <string name="wifi_sleep_policy_content">What it does is, as this ^ suggests, keeps WiFi on while your phone is awake. To enable this, (and there are many ways.. I\'ll give you the way I\'d do it.) Go to settings>WiFi>WiFi settings (3 vertical dots)>Advanced settings>keep WiFi on during sleep.. And set it to \'always\' or.. You can use tricksterMOD and enable that via the GUI (Graphical User Interface)</string>
+    <string name="wifi_sleep_policy_content">Kkeeps WiFi on while your phone is awake. To enable this, (and there are many ways.. I\'ll give you the way I\'d do it.) Go to settings>WiFi>WiFi settings (3 vertical dots)>Advanced settings > keep WiFi on during sleep.. And set it to \'always\' or, You can use TricksterMOD and enable that via the GUI (Graphic User Interface)</string>
     <string name="wifi_on_during_sleep">WiFi on during sleep</string>
     <string name="zram_information_content">Avoids disk paging, compresses your RAM. Disk paging means the way your phone saves temporary data. It helps with fragmentation of your disk and the physical space, which, over time, keeps speed stable and prevents any system slowdowns.</string>
     <string name="zram_information">zRAM Information</string>   
