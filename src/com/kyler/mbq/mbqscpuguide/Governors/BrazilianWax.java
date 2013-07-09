@@ -11,15 +11,12 @@ import android.view.ViewGroup;
 import android.widget.*;
 import android.widget.AdapterView.*;
 
-public class BrazilianWax extends Fragment implements OnClickListener
-	{
+public class BrazilianWax extends Fragment implements OnClickListener {
 
 		public void onClick(View p1)
-			{
+	{
 				// TODO: Implement this method
-			}
-		
-
+		}
 	
 	  @Override
 	  public View onCreateView(LayoutInflater inflater, ViewGroup container,
