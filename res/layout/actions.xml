@@ -25,7 +25,6 @@
     android:layout_height="match_parent"
     android:background="@color/actions_bg"
     android:cacheColorHint="@android:color/holo_blue_light"
-    android:divider="?android:attr/listDividerAlertDialog"
     android:drawSelectorOnTop="true" 
     android:listSelector="@drawable/item_background_holo_light">
 </ListView>

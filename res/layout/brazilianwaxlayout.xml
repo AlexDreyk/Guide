@@ -24,5 +24,11 @@
         android:layout_marginBottom="54dp"
         android:text="@string/brazilianwax"
         android:textAppearance="?android:attr/textAppearanceMedium" />
-
+	
+	<Button
+		android:id="@+id/b1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+		
+	</Button>
 </RelativeLayout>
