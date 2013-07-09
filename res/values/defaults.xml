@@ -15,8 +15,8 @@
   limitations under the License.
 -->
 <resources>
-    <bool name="default_pref_show_shadow">true</bool>
-    <dimen name="default_pref_shadow_width">12dip</dimen>
+    <bool name="default_pref_show_shadow">false</bool>
+    <dimen name="default_pref_shadow_width">6dip</dimen>
     <integer name="default_pref_fade_max_value">200</integer>
     <integer name="default_pref_fling_delay">960</integer>
     <dimen name="default_pref_swiping_edge_width">36dip</dimen>
