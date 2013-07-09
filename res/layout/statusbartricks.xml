@@ -9,6 +9,8 @@
         android:textColor="@color/black"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
+        android:layout_marginLeft="30dp"
+		android:layout_marginRight="35dp"
         android:text="@string/status_bar_tricks_content" />
 
     <TextView

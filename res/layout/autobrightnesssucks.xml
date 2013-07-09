@@ -8,6 +8,8 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
+        android:layout_marginLeft="30dp"
+		android:layout_marginRight="35dp"
         android:textColor="@color/black"
         android:text="@string/autobrightness_info" />
 

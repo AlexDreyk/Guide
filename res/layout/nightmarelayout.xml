@@ -8,6 +8,8 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:textColor="@color/black"
+        android:layout_marginLeft="30dp"
+		android:layout_marginRight="35dp"
         android:layout_centerVertical="true"
         android:text="@string/nightmare_definition"
         android:textAppearance="?android:attr/textAppearanceSmall" />

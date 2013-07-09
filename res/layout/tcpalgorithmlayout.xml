@@ -10,6 +10,8 @@
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
         android:text="@string/tcp_algorithms_information"
+        android:layout_marginLeft="30dp"
+		android:layout_marginRight="35dp"
         android:textAppearance="?android:attr/textAppearanceSmall" />
 
     <TextView
